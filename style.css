@@ -1,0 +1,14 @@
+.navbar-custom {
+    background-color: #FFE066;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #f7d774;
+
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding:0;
+  background-color: rgb(247, 244, 240);
+}
