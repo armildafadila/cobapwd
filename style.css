@@ -172,3 +172,8 @@ background-color: #FFE066;
   transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+.nama-testi {
+  font-size: larger;
+  color: #4f7726;
+  font-weight: bold;
+}
