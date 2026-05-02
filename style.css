@@ -159,10 +159,16 @@ background-color: #FFE066;
 .juduldaftar {
   font-weight: bold;
   color: #4f7726;
-
 }
 .card-testi {
   margin: auto;
   border-radius: 12px;
-  
+  height: 100%;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.card-testi:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
