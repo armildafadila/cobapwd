@@ -64,26 +64,26 @@
         <label>
             <span class="juduldaftar">Nama Lengkap</span>
 
-            <input required="" placeholder="First Name" type="text" class="form-control">
+            <input required placeholder="First Name" type="text" class="form-control" name="first_name">
         </label>
         <label>
           <br>
-            <input required="" placeholder="Last name" type="text" class="form-control">
+            <input required placeholder="Last name" type="text" class="form-control" name="last_name">
         </label>
     </div>  
             
     <label>
         <span class="juduldaftar">Email</span>
-        <input required="" placeholder="Email" type="email"  class="form-control">
+        <input required  placeholder="Email" type="email"  class="form-control" name="email">
     </label> 
         
     <label>
         <span class="juduldaftar">Password</span>
-        <input required="" placeholder="Password" type="password"  class="form-control">
+        <input required placeholder="Password" type="password"  class="form-control" name="password">
     </label>
     <label>
         <span class="juduldaftar">Confirm password</span>
-        <input required="" placeholder="Konfirmasi Password" type="password"  class="form-control">
+        <input required placeholder="Konfirmasi Password" type="password"  class="form-control" name="confirm_pw">
     </label>
     <br>
     <button class="submit">Tambahkan pengguna baru</button>
