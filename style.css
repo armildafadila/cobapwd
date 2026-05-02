@@ -177,3 +177,17 @@ background-color: #FFE066;
   color: #4f7726;
   font-weight: bold;
 }
+.card-text {
+  font-size: small;
+}
+.judul-testi {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #4f7726;
+  font-weight: bold;
+}
+.hr-testi {
+  margin-bottom: 30px;
+  color: #4f7726;
+
+}
