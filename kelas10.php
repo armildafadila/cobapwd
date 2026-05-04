@@ -116,7 +116,7 @@
     <div class="card">
     <img src="fungsi.png" class="card-img-top" alt="fungsi">
     <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">MATERI FUNGSI</h5>
+    <h5 class="card-title" style="font-weight: bold;">FUNGSI</h5>
     <p class="card-text">Latihan soal fungsi untuk menguji pemahaman hubungan antara nilai x dan y melalui berbagai bentuk soal dan grafik.</p>
     <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
     </div>
@@ -128,7 +128,7 @@
   <div class="card">
   <img src="barisanderet.png" class="card-img-top" alt="baris">
   <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">MATERI BARISAN & DERET</h5>
+    <h5 class="card-title" style="font-weight: bold;">BARISAN & DERET</h5>
     <p class="card-text">Latihan soal barisan dan deret untuk menguji pemahaman pola bilangan serta cara menentukan suku dan jumlahnya.</p>
     <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
     </div>
@@ -140,7 +140,7 @@
   <div class="card">
   <img src="trigonometri.png" class="card-img-top" alt="trigonometri">
   <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">MATERI TRIGONOMETRI</h5>
+    <h5 class="card-title" style="font-weight: bold;">TRIGONOMETRI</h5>
     <p class="card-text">Latihan soal trigonometri untuk menguji pemahaman tentang hubungan sudut dan sisi pada segitiga serta penerapannya dalam berbagai bentuk soal.</p>
     <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
     </div>
