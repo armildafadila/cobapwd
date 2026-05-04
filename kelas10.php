@@ -10,8 +10,9 @@
      <style>
        h2 {
         text-align: left;
-        margin-top: 25px;
+        margin-top: 20px;
         font-weight: bold;
+        color: #4f7726;
 
     }
 
@@ -19,6 +20,12 @@
       max-width: 300px;
       margin: auto;
       height: 100%;
+    }
+    
+    .card-title{
+      color: #4f7726;
+      font-weight: bold;
+      text-align: center;
     }
 
     .card-body{
