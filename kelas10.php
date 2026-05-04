@@ -16,9 +16,18 @@
     }
 
     .card{
-      transition: all 0.3s ease;
-      border-radius: 12px;
-      overflow: hidden;
+      max-width: 300px;
+      margin: auto;
+      height: 100%;
+    }
+
+    .card-body{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-body .btn{
+      margin-top: auto;
     }
 
      .card:hover {
@@ -26,6 +35,20 @@
       box-shadow: 0 10px 25px rgba(0,0,0,0.15);
       
      }
+
+    .card-img-top {
+      height: 220px;
+      padding: 10px;
+      object-fit: contain;
+    }
+
+    .container{
+      margin-top: 40px;
+    }
+
+    .footer{
+      margin-top: 80px;
+    }
      </style>
 </head>
 <body>
@@ -98,7 +121,7 @@
     <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">MATERI FUNGSI</h5>
     <p class="card-text">Latihan soal fungsi untuk menguji pemahaman hubungan antara nilai x dan y melalui berbagai bentuk soal dan grafik.</p>
-    <a href="#" class="btn btn-primary">Kerjakan Soal</a>
+    <a href="#" class="btn btn-success">Kerjakan Soal</a>
     </div>
   </div>
 </div>
