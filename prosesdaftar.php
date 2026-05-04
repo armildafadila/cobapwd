@@ -6,6 +6,8 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 $confirm = $_POST['confirm_pw'];
 
+$konek = new mysqli ($nama, $email, $password, $confirm);
+
 if ($password != $confirm) {
     echo "Konfirmasi Password Berbeda, Silahkan ulangi lagi!
      <a href='daftar.php'></a>";
