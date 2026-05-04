@@ -74,7 +74,7 @@
     </label>
     
     <br>
-    <a class="submit text-center" href="">Masuk</a>
+    <button type="submit" class="btn btn-success w-100">Masuk</button>
     <p class="signin">Belum mempunyai akun ? <a href="daftar.php">Daftar pengguna baru</a> </p>
 </div>
 </form>
