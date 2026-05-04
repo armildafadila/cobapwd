@@ -76,26 +76,10 @@
       <ul class="navbar-nav">
 
          <a class="nav-link active" href="halaman1.html">Beranda</a>
-        <a class="nav-link active" href="tentang.html">Tentang</a>
-        <a class="nav-link" href="keunggulan.html">Keunggulan</a>
-        <a class="nav-link" href="testimoni.html">Testimoni</a>
-        <li class="nav-item dropdown list-unstyled">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            Kelas
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Kelas 10</a></li>
-            <li><a class="dropdown-item" href="#">Kelas 11</a></li>
-            <li><a class="dropdown-item" href="#">Kelas 12</a></li>
-          </ul>
-        </li>
-
-        </ul>
-
-        <div class="d-flex ms-auto gap-3">
-        <button class="btn btn-outline-success"> Daftar </button>
-        <button class="btn btn-outline-success"> Masuk </button>
-    </div>
+        <a class="nav-link active" href="kelas10.php">Kelas 10</a>
+        <a class="nav-link" href="kelas11.php">Kelas 11</a>
+        <a class="nav-link" href="kelas12.php">Kelas 12</a>
+        
     </div>
 
 </nav>
