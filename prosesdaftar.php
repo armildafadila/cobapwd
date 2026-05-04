@@ -7,15 +7,17 @@ $password = $_POST['password'];
 $confirm = $_POST['confirm_pw'];
 
 if ($password != $confirm) {
-    echo "Konfirmasi Password Berbeda, Silahkan ulangi lagi!
-     <a href='daftar.php'></a>";
+    echo "<script>
+    alert('Konfirmasi Password Berbeda, Silahkan ulangi lagi!');
+    window.location ='daftar.php'; </script>";
     exit;
 }
 $query= mysqli_query($koneksi, "INSERT INTO users (nama, email, password) VALUES ('$nama', '$email', '$password')") or die(mysqli_error($koneksi));
 
 if ($query) {
-    echo "Proses pendaftaran berhasil";
-
+echo "<script>
+    alert('Proses Pendaftaran berhasil! ');
+    window.location ='kelas10.html'; </script>";
 }else {
     echo "Proses pendaftaran gagal!";
 }
