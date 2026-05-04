@@ -133,7 +133,7 @@
   <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">MATERI BARISAN & DERET</h5>
     <p class="card-text">Latihan soal barisan dan deret untuk menguji pemahaman pola bilangan serta cara menentukan suku dan jumlahnya.</p>
-    <a href="#" class="btn btn-primary">Kerjakan Soal</a>
+    <a href="#" class="btn btn-success">Kerjakan Soal</a>
     </div>
   </div>
 </div>
