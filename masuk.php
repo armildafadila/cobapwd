@@ -57,7 +57,7 @@
          <p class="desk-regist">Selamat datang di MathPartner, masukan email dan password untuk akses MathPartner</p>
     </div>
     <div class="card-body">
-<form class="form" action="prosesdaftar.php" method="POST">
+<form class="form" action="proseslogin.php" method="POST">
          <div class="flex">
 
         
