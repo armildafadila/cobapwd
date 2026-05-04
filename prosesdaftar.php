@@ -6,14 +6,12 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 $confirm = $_POST['confirm_pw'];
 
-$konek = new mysqli ($nama, $email, $password, $confirm);
-
 if ($password != $confirm) {
     echo "Konfirmasi Password Berbeda, Silahkan ulangi lagi!
      <a href='daftar.php'></a>";
     exit;
 }
-$query= mysqli_query($konek, "INSERT INTO users (nama, email, password) VALUES ('$nama', '$email', '$password')") or die(mysqli_error($konek));
+$query= mysqli_query($koneksi, "INSERT INTO users (nama, email, password) VALUES ('$nama', '$email', '$password')") or die(mysqli_error($koneksi));
 
 if ($query) {
     echo "Proses pendaftaran berhasil";
