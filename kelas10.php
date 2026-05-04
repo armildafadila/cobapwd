@@ -68,6 +68,13 @@
      </style>
 </head>
 <body>
+  <?php
+  session_start();
+  if (!isset($_SESSION['email'])) {
+    header("Location: masuk.php");
+    exit;
+}
+?>
     <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container ">
     

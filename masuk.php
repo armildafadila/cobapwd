@@ -65,16 +65,16 @@
             
     <label>
         <span class="juduldaftar">Email</span>
-        <input required="" placeholder="Email" type="email"  class="form-control">
+        <input required="" placeholder="Email" type="email"  class="form-control" name="email">
     </label> 
         
     <label>
         <span class="juduldaftar">Password</span>
-        <input required="" placeholder="Password" type="password"  class="form-control">
+        <input required="" placeholder="Password" type="password"  class="form-control" name="password">
     </label>
     
     <br>
-    <a class="submit text-center" href="kelas10.php">Masuk</a>
+    <a class="submit text-center" href="">Masuk</a>
     <p class="signin">Belum mempunyai akun ? <a href="daftar.php">Daftar pengguna baru</a> </p>
 </div>
 </form>
