@@ -124,10 +124,10 @@
 
   <div class="col-md-4">
     <div class="card">
-    <img src="fungsi.png" class="card-img-top" alt="fungsi">
+    <img src="integral2.png" class="card-img-top" alt="fungsi">
     <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">MATERI FUNGSI</h5>
-    <p class="card-text">Latihan soal fungsi untuk menguji pemahaman hubungan antara nilai x dan y melalui berbagai bentuk soal dan grafik.</p>
+    <h5 class="card-title" style="font-weight: bold;">INTEGRAL</h5>
+    <p class="card-text">Latihan soal integral untuk menguji pemahaman luas daerah serta hubungan dengan turunan.</p>
     <a href="#" class="btn btn-success">Kerjakan Soal</a>
     </div>
   </div>
