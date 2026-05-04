@@ -16,6 +16,13 @@
 
     }
 
+    .btn-hijau-custom {
+      background-color: #4f7726;
+      color: white;
+      border: none;
+    }
+
+
     .card{
       max-width: 300px;
       margin: auto;
@@ -128,7 +135,7 @@
     <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">INTEGRAL</h5>
     <p class="card-text">Latihan soal integral untuk menguji pemahaman luas daerah serta hubungan dengan turunan.</p>
-    <a href="#" class="btn btn-success">Kerjakan Soal</a>
+    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
     </div>
   </div>
 </div>
@@ -140,7 +147,7 @@
   <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">DIMENSI TIGA</h5>
     <p class="card-text">Latihan soal dimensi tiga untuk menguji pemahaman jarak dan sudut dalam bangun ruang.</p>
-    <a href="#" class="btn btn-success">Kerjakan Soal</a>
+    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
     </div>
   </div>
 </div>
@@ -152,7 +159,7 @@
   <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">PELUANG</h5>
     <p class="card-text">Latihan soal peluang untuk menguji pemahaman kemungkinan kejadian serta perhitungan kombinasi dan permutasi./p>
-    <a href="#" class="btn btn-success">Kerjakan Soal</a>
+    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
     </div>
   </div>
 </div>

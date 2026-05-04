@@ -28,6 +28,12 @@
       text-align: center;
     }
 
+    .btn-hijau-custom {
+      background-color: #4f7726;
+      color: white;
+      border: none;
+    }
+
     .card-body{
       display: flex;
       flex-direction: column;
@@ -37,7 +43,7 @@
       margin-top: auto;
     }
 
-     .card:hover {
+    .card:hover {
       transform: translateY(-10px);
       box-shadow: 0 10px 25px rgba(0,0,0,0.15);
       
@@ -112,7 +118,7 @@
     <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">MATERI FUNGSI</h5>
     <p class="card-text">Latihan soal fungsi untuk menguji pemahaman hubungan antara nilai x dan y melalui berbagai bentuk soal dan grafik.</p>
-    <a href="#" class="btn btn-success">Kerjakan Soal</a>
+    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
     </div>
   </div>
 </div>
@@ -124,7 +130,7 @@
   <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">MATERI BARISAN & DERET</h5>
     <p class="card-text">Latihan soal barisan dan deret untuk menguji pemahaman pola bilangan serta cara menentukan suku dan jumlahnya.</p>
-    <a href="#" class="btn btn-success">Kerjakan Soal</a>
+    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
     </div>
   </div>
 </div>
@@ -136,7 +142,7 @@
   <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">MATERI TRIGONOMETRI</h5>
     <p class="card-text">Latihan soal trigonometri untuk menguji pemahaman tentang hubungan sudut dan sisi pada segitiga serta penerapannya dalam berbagai bentuk soal.</p>
-    <a href="#" class="btn btn-success">Kerjakan Soal</a>
+    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
     </div>
   </div>
 </div>

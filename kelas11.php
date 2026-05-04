@@ -15,6 +15,12 @@
         color: #4f7726;
 
     }
+    .btn-hijau-custom {
+      background-color: #4f7726;
+      color: white;
+      border: none;
+    }
+
 
     .card{
       max-width: 300px;
@@ -112,7 +118,7 @@
     <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">TURUNAN</h5>
     <p class="card-text">Latihan soal turunan untuk menguji pemahaman perubahan nilai serta menentukan gradien dan nilai maksimum atau minimum</p>
-    <a href="#" class="btn btn-success">Kerjakan Soal</a>
+    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
     </div>
   </div>
 </div>
@@ -124,7 +130,7 @@
   <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">MATRIKS</h5>
     <p class="card-text">Latihan soal matriks untuk menguji pemahaman operasi, determinan, dan invers pada susunan bilangan.</p>
-    <a href="#" class="btn btn-success">Kerjakan Soal</a>
+    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
     </div>
   </div>
 </div>
@@ -136,7 +142,7 @@
   <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">PROGRAM LINIER</h5>
     <p class="card-text">Latihan soal program linear untuk menguji pemahaman sistem pertidaksamaan dan menentukan nilai optimum.</p>
-    <a href="#" class="btn btn-success">Kerjakan Soal</a>
+    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
     </div>
   </div>
 </div>
