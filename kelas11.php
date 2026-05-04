@@ -76,26 +76,10 @@
       <ul class="navbar-nav">
 
          <a class="nav-link active" href="halaman1.html">Beranda</a>
-        <a class="nav-link active" href="tentang.html">Tentang</a>
-        <a class="nav-link" href="keunggulan.html">Keunggulan</a>
-        <a class="nav-link" href="testimoni.html">Testimoni</a>
-        <li class="nav-item dropdown list-unstyled">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            Kelas
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Kelas 10</a></li>
-            <li><a class="dropdown-item" href="#">Kelas 11</a></li>
-            <li><a class="dropdown-item" href="#">Kelas 12</a></li>
-          </ul>
-        </li>
+        <a class="nav-link active" href="kelas10.php">Kelas 10</a>
+        <a class="nav-link" href="kelas11.php">Kelas 11</a>
+        <a class="nav-link" href="kelas12.php">Kelas 12</a>
 
-        </ul>
-
-        <div class="d-flex ms-auto gap-3">
-        <button class="btn btn-outline-success"> Daftar </button>
-        <button class="btn btn-outline-success"> Masuk </button>
-    </div>
     </div>
 
 </nav>
@@ -124,10 +108,10 @@
 
   <div class="col-md-4">
     <div class="card">
-    <img src="fungsi.png" class="card-img-top" alt="fungsi">
+    <img src="turunan.png" class="card-img-top" alt="fungsi">
     <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">MATERI FUNGSI</h5>
-    <p class="card-text">Latihan soal fungsi untuk menguji pemahaman hubungan antara nilai x dan y melalui berbagai bentuk soal dan grafik.</p>
+    <h5 class="card-title" style="font-weight: bold;">TURUNAN</h5>
+    <p class="card-text">Latihan soal turunan untuk menguji pemahaman perubahan nilai serta menentukan gradien dan nilai maksimum atau minimum</p>
     <a href="#" class="btn btn-success">Kerjakan Soal</a>
     </div>
   </div>
@@ -136,10 +120,10 @@
 
 <div class="col-md-4">
   <div class="card">
-  <img src="barisanderet.png" class="card-img-top" alt="baris">
+  <img src="matriks.png" class="card-img-top" alt="baris">
   <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">MATERI BARISAN & DERET</h5>
-    <p class="card-text">Latihan soal barisan dan deret untuk menguji pemahaman pola bilangan serta cara menentukan suku dan jumlahnya.</p>
+    <h5 class="card-title" style="font-weight: bold;">MATRIKS</h5>
+    <p class="card-text">Latihan soal matriks untuk menguji pemahaman operasi, determinan, dan invers pada susunan bilangan.</p>
     <a href="#" class="btn btn-success">Kerjakan Soal</a>
     </div>
   </div>
@@ -148,10 +132,10 @@
 
 <div class="col-md-4">
   <div class="card">
-  <img src="trigonometri.png" class="card-img-top" alt="trigonometri">
+  <img src="programlineare.png" class="card-img-top" alt="trigonometri">
   <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">MATERI TRIGONOMETRI</h5>
-    <p class="card-text">Latihan soal trigonometri untuk menguji pemahaman tentang hubungan sudut dan sisi pada segitiga serta penerapannya dalam berbagai bentuk soal.</p>
+    <h5 class="card-title" style="font-weight: bold;">PROGRAM LINIER</h5>
+    <p class="card-text">Latihan soal program linear untuk menguji pemahaman sistem pertidaksamaan dan menentukan nilai optimum.</p>
     <a href="#" class="btn btn-success">Kerjakan Soal</a>
     </div>
   </div>
