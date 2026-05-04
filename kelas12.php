@@ -136,10 +136,10 @@
 
 <div class="col-md-4">
   <div class="card">
-  <img src="barisanderet.png" class="card-img-top" alt="baris">
+  <img src="dimensi3 (2).png" class="card-img-top" alt="baris">
   <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">MATERI BARISAN & DERET</h5>
-    <p class="card-text">Latihan soal barisan dan deret untuk menguji pemahaman pola bilangan serta cara menentukan suku dan jumlahnya.</p>
+    <h5 class="card-title" style="font-weight: bold;">DIMENSI TIGA</h5>
+    <p class="card-text">Latihan soal dimensi tiga untuk menguji pemahaman jarak dan sudut dalam bangun ruang.</p>
     <a href="#" class="btn btn-success">Kerjakan Soal</a>
     </div>
   </div>
@@ -148,10 +148,10 @@
 
 <div class="col-md-4">
   <div class="card">
-  <img src="trigonometri.png" class="card-img-top" alt="trigonometri">
+  <img src="peluang.png" class="card-img-top" alt="trigonometri">
   <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">MATERI TRIGONOMETRI</h5>
-    <p class="card-text">Latihan soal trigonometri untuk menguji pemahaman tentang hubungan sudut dan sisi pada segitiga serta penerapannya dalam berbagai bentuk soal.</p>
+    <h5 class="card-title" style="font-weight: bold;">PELUANG</h5>
+    <p class="card-text">Latihan soal peluang untuk menguji pemahaman kemungkinan kejadian serta perhitungan kombinasi dan permutasi./p>
     <a href="#" class="btn btn-success">Kerjakan Soal</a>
     </div>
   </div>
