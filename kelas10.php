@@ -34,6 +34,10 @@
       border: none;
     }
 
+    .card-text{
+      text-align: center;
+    }
+
     .card-body{
       display: flex;
       flex-direction: column;

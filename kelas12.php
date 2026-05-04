@@ -29,6 +29,10 @@
       height: 100%;
     }
     
+     .card-text{
+      text-align: center;
+    }
+    
     .card-title{
       color: #4f7726;
       font-weight: bold;
