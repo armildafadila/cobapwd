@@ -74,7 +74,7 @@
     </label>
     
     <br>
-    <a class="submit" href="kelas10.php">Masuk</a>
+    <a class="submit text-center" href="kelas10.php">Masuk</a>
     <p class="signin">Belum mempunyai akun ? <a href="daftar.php">Daftar pengguna baru</a> </p>
 </div>
 </form>

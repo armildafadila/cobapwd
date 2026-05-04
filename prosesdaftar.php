@@ -12,6 +12,13 @@ if ($password != $confirm) {
     window.location ='daftar.php'; </script>";
     exit;
 }
+$cek = mysqli_query($koneksi, "SELECT * FROM users WHERE email = '$email'");
+
+if(mysqli_num_rows($cek)>0) {
+    echo"<script> alert('Email Sudah Terdaftar, Harap Login');
+    window.location = 'masuk.php'; </script>";
+    exit;
+}
 $query= mysqli_query($koneksi, "INSERT INTO users (nama, email, password) VALUES ('$nama', '$email', '$password')") or die(mysqli_error($koneksi));
 
 if ($query) {
