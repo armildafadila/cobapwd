@@ -16,12 +16,6 @@
 
     }
 
-    .btn-hijau-custom {
-      background-color: #4f7726;
-      color: white;
-      border: none;
-    }
-
 
     .card{
       max-width: 300px;
@@ -32,7 +26,7 @@
      .card-text{
       text-align: center;
     }
-    
+
     .card-title{
       color: #4f7726;
       font-weight: bold;

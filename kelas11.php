@@ -15,11 +15,6 @@
         color: #4f7726;
 
     }
-    .btn-hijau-custom {
-      background-color: #4f7726;
-      color: white;
-      border: none;
-    }
 
 
     .card{
