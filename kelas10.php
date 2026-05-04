@@ -145,7 +145,7 @@
   <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">MATERI TRIGONOMETRI</h5>
     <p class="card-text">Latihan soal trigonometri untuk menguji pemahaman tentang hubungan sudut dan sisi pada segitiga serta penerapannya dalam berbagai bentuk soal.</p>
-    <a href="#" class="btn btn-primary">Kerjakan Soal</a>
+    <a href="#" class="btn btn-success">Kerjakan Soal</a>
     </div>
   </div>
 </div>
