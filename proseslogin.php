@@ -15,17 +15,15 @@ if (mysqli_num_rows($data) > 0) {
         </script>";
 
     } else {
-         echo "<script>
-        alert('Password salah!');
-        window.location='masuk.php';
-        </script>";
+       $_SESSION['login_error'] = "Email atau password salah";
+       header("Location: masuk.php");
     } 
+    exit();
     }else {
-    echo "<script>
-    alert('Email tidak ditemukan!');
-    window.location='masuk.php';
-    </script>";
-}
+    $_SESSION['email_error'] = "Email tidak ditemukan";
+    header("Location: masuk.php");
+    exit();
+    }
 
 ?>
     
