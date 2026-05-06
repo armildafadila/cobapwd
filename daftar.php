@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,6 +63,12 @@
 <form class="form" action="prosesdaftar.php" method="POST">
         
         <div class="flex">
+          <?php
+         if(isset($_SESSION['error'])) {
+          echo "<div class='alert alert-danger w-100'>".$_SESSION['error']."</div>";
+          unset($_SESSION['error']);
+         }
+         ?>
 
         <label>
             <span class="juduldaftar">Nama Lengkap</span>
