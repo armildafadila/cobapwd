@@ -61,11 +61,11 @@
 <div class="d-flex justify-content-center">
   <div class="card p-3">
         <div class="card-header">
-         <div class="text-regist">Registrasi Pengguna Baru</div>
-         <p class="desk-regist">Selamat datang di MathPartner, buat akun sekarang untuk mengakses fitur-fitur menarik di MathPartner</p>
+
+         <div class="text-regist"></div>
+         <p class="desk-regist"></p>
     </div>
     <div class="card-body">
 <form class="form" action="prosesdaftar.php" method="POST">
         
         <div class="flex">
-            
