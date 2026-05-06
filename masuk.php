@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,24 +69,33 @@
          <p class="desk-regist">Selamat datang di MathPartner, masukan email dan password untuk akses MathPartner</p>
     </div>
     <div class="card-body">
-<form class="form" action="proseslogin.php" method="POST">
+    <form class="form" action="proseslogin.php" method="POST">
          <div class="flex">
-
+   <?php
+         if(isset($_SESSION['login_error'])) {
+          echo "<div class='alert alert-danger w-100'>".$_SESSION['login_error']."</div>";
+          unset($_SESSION['login_error']);
+         }
+          if(isset($_SESSION['email_error'])) {
+          echo "<div class='alert alert-danger w-100'>".$_SESSION['email_error']."</div>";
+          unset($_SESSION['email_error']);
+         }
+         ?>
         
     </div>  
             
     <label>
         <span class="juduldaftar">Email</span>
-        <input required="" placeholder="Email" type="email"  class="form-control">
+        <input required="" placeholder="Email" type="email"  class="form-control" name="email">
     </label> 
         
     <label>
         <span class="juduldaftar">Password</span>
-        <input required="" placeholder="Password" type="password"  class="form-control">
+        <input required="" placeholder="Password" type="password"  class="form-control" name="password">
     </label>
     
     <br>
-    <a class="btn btn-hijau-custom" href="#">Masuk</a>
+    <a class="submit" href="kelas10.php">Masuk</a>
     <p class="signin">Belum mempunyai akun ? <a href="daftar.php">Daftar pengguna baru</a> </p>
 </div>
 </form>
