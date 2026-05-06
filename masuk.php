@@ -6,7 +6,15 @@
   <title>MathPartner</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">\
+
+  <style>
+    .btn-hijau-custom {
+      background-color: #4f7726;
+      color: white;
+      border: none;
+    }
+  </style>
 
 </head>
 
@@ -74,7 +82,7 @@
     </label>
     
     <br>
-    <a class="submit" href="kelas10.php">Masuk</a>
+    <a class="btn btn-hijau-custom" href="#">Masuk</a>
     <p class="signin">Belum mempunyai akun ? <a href="daftar.php">Daftar pengguna baru</a> </p>
 </div>
 </form>

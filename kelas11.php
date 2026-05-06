@@ -73,7 +73,7 @@
     
      <a class="navbar-brand d-flex align-items-center" href="#">
       <a href="halaman1.html">
-      <img src="baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top"></a>
+      <img src="baru.png" alt="Logo" width="90" class="me-2"></a>
       <span class="text-judul">MathPartner</span>
     </a>
 
@@ -155,25 +155,25 @@
 
 <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 ps-4">
+            <div class="row align-items-start">
+                <div class="col-md-4">
                     <div class="d-flex align-items-center">
-                     <img src="baru.png" alt="Logo" width="90" height="auto" class="me-2">
+                     <img src="baru.png" alt="Logo" width="60" height="auto" class="me-2">
                 <h4 class="fw-bold m-0">MathPartner</h4>
                 </div>
                 <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
                 </div>
-                <div class="col-md-3">
-                <h4 class="fw-bold m-0 mt-3">Kontak Kami</h4>
-                        <ul class="list">
+                <div class="col-md-4">
+                <h4 class="fw-bold m-0">Kontak Kami</h4>
+                        <ul class="footer-list">
                         <li class="text-tabel">Email: mathpartner@gmail.com</li>
                         <li class="text-tabel">Telepon: 081234567890</li>
 
                         </ul>
                 </div>
-                <div class="col-md-3">
-                <h4 class="fw-bold m-0 mt-3">Ikuti Sosial Media</h4>
-                        <ul class="list">
+                <div class="col-md-4">
+                <h4 class="fw-bold m-0">Ikuti Sosial Media</h4>
+                        <ul class="footer-list">
                              <li class="text-tabel">Instagram: @mathpartner</li>
                              <li class="text-tabel">Youtube: @mathpartner</li>
                              <li class="text-tabel">Tiktok: @mathpartner</li>
