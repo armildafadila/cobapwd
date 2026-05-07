@@ -19,7 +19,7 @@ session_start();
   <div class="container">
     
      <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top">
+      <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top">
       <span class="text-judul">MathPartner</span>
     </a>
 
@@ -106,7 +106,7 @@ session_start();
             <div class="row">
                 <div class="col-md-4 ps-4">
                     <div class="d-flex align-items-center">
-                     <img src="baru.png" alt="Logo" width="90" height="auto" class="me-2">
+                     <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
                 <h4 class="fw-bold m-0">MathPartner</h4>
                 </div>
                 <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>

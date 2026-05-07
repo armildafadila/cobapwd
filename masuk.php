@@ -10,7 +10,7 @@ session_start();
   <title>MathPartner</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">\
+  <link rel="stylesheet" href="style.css">
 
   <style>
     .btn-hijau-custom {
@@ -28,7 +28,7 @@ session_start();
   <div class="container">
     
      <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top">
+      <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top">
       <span class="text-judul">MathPartner</span>
     </a>
 
@@ -95,7 +95,7 @@ session_start();
     </label>
     
     <br>
-    <a class="submit" href="kelas10.php">Masuk</a>
+    <a class="submit text-center" href="kelas10.php">Masuk</a>
     <p class="signin">Belum mempunyai akun ? <a href="daftar.php">Daftar pengguna baru</a> </p>
 </div>
 </form>
@@ -103,6 +103,44 @@ session_start();
 </div>
 </div>
 
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ps-4">
+                    <div class="d-flex align-items-center">
+                     <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
+                <h4 class="fw-bold m-0">MathPartner</h4>
+                </div>
+                <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
+                </div>
+                <div class="col-md-3">
+                <h4 class="fw-bold m-0 mt-3">Kontak Kami</h4>
+                        <ul class="list">
+                        <li class="text-tabel">Email: mathpartner@gmail.com</li>
+                        <li class="text-tabel">Telepon: 081234567890</li>
+
+                        </ul>
+                </div>
+                <div class="col-md-3">
+                <h4 class="fw-bold m-0 mt-3">Ikuti Sosial Media</h4>
+                        <ul class="list">
+                             <li class="text-tabel">Instagram: @mathpartner</li>
+                             <li class="text-tabel">Youtube: @mathpartner</li>
+                             <li class="text-tabel">Tiktok: @mathpartner</li>
+                        </ul>
+                </div>
+                
+                <hr>
+        </div>
+        <br>
+        </footer>
+        <div class="footer-bawah">
+        <p>© 2026 PT MathPartner. All rights reserved.</p>
+        <p>Terms of Service | Policy | Service Level Agreement</p>
+    </div>
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
