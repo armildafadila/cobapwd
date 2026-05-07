@@ -67,5 +67,6 @@
     </div>
     <div class="card-body">
 <form class="form" action="prosesdaftar.php" method="POST">
+    
         
         <div class="flex">
