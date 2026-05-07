@@ -26,6 +26,18 @@ session_start();
       align-items: center;
       gap: 300px; 
     }
+    .text-atas {
+      width:320px;
+      font-size:22px;
+      font-weight:bold;
+    }
+    .isi-teks {
+      font-size:22px;
+      font-weight:600;
+     color:#4f7726;
+      letter-spacing:1px;
+    }
+    
   </style>
 
 </head>
@@ -75,15 +87,13 @@ session_start();
         <div class="card-header">
           <div class="baris-soal">
           <span class= "text-atas">Materi</span>
-          <span class="isi-atas">Fungsi</span>
+          <span class="isi-atas">FUNGSI</span>
           </div>
-
+        
           <div class="baris-soal">
           <span class="text-atas">Kelas</span>
-          <span class="isi-bawah"> Kelas 10 </span>
-
-          <div>
-
+          <span class="isi-bawah"> 10 </span>
+    </div>      
     </div>
 <form class="form" action="hasil.php" method="POST">
     
