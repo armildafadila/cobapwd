@@ -2,9 +2,7 @@
 include 'koneksi.php';
 include 'fungsi.php';
 session_start();
-if (!isset($_SESSION['id_users'])){
-  header("Location: masuk.php?pesan= Silahkan login");
-  exit;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +20,12 @@ if (!isset($_SESSION['id_users'])){
       color: white;
       border: none;
     }
+
+    .baris-soal {
+      display: flex;
+      align-items: center;
+      gap: 300px; 
+    }
   </style>
 
 </head>
@@ -32,7 +36,7 @@ if (!isset($_SESSION['id_users'])){
   <div class="container">
     
      <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top">
+      <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top">
       <span class="text-judul">MathPartner</span>
     </a>
 
@@ -69,12 +73,19 @@ if (!isset($_SESSION['id_users'])){
 <div class="d-flex justify-content-center">
   <div class="card p-3">
         <div class="card-header">
+          <div class="baris-soal">
+          <span class= "text-atas">Materi</span>
+          <span class="isi-atas">Fungsi</span>
+          </div>
 
-         <div class="text-regist"></div>
-         <p class="desk-regist"></p>
+          <div class="baris-soal">
+          <span class="text-atas">Kelas</span>
+          <span class="isi-bawah"> Kelas 10 </span>
+
+          <div>
+
     </div>
-    <div class="card-body">
-<form class="form" action="prosesdaftar.php" method="POST">
+<form class="form" action="hasil.php" method="POST">
     
         
         <div class="flex">
