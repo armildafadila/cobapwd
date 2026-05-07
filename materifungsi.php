@@ -1,3 +1,11 @@
+<?php
+include 'koneksi.php';
+include 'fungsi.php';
+session_start();
+if (!isset($_SESSION['id_users'])){
+  header("Location: masuk.php?pesan= Silahkan login");
+  exit;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

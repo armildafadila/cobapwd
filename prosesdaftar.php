@@ -16,7 +16,7 @@ if ($password != $confirm) {
 $cek = mysqli_query($koneksi, "SELECT * FROM users WHERE email = '$email'");
 
 if(mysqli_num_rows($cek)>0) {
-   $_SESSION['error'] = "Email sudah terdaftar, silahkan login";
+   $_SESSION['error'] = "Email sudah terdaftar, silahkan login kembali";
    header("Location: masuk.php");
     exit;
 }
