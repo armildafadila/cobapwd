@@ -5,7 +5,8 @@ $materi_fungsi = [
         'opsi' => [
             'A' => 8 , 'B' => 10, 'C' => 11, 'D' => 13, 'E' => 15
         ],
-        'jawaban' => 'C'
+        'jawaban' => 'C',
+        'pembahasan' => 'f(4) = 2(4) + 3 = 8 + 3 = 11'
     ],
     'soal2' => [ 
         'soal' => 'Diketahui fungsi f(x)=x^2−5x+6. Nilai dari f(2) adalah',
@@ -20,23 +21,24 @@ $materi_fungsi = [
         'opsi' => [
             'A' => -13, 'B' => -12, 'C' => -11, 'D' => -10, 'E' => -9
         ],
-        'jawaban' => 'A'
-        'pembahasan' => 'f(-2)'
-
+        'jawaban' => 'A',
+        'pembahasan' => 'f(-2) = 3(-2) - 7 = -6 - 7 = -13'
     ],
     'soal4' => [ 
         'soal' => 'Diketahui fungsi f(x) = x + 4 / 2. Nilai dari f(6) adalah',
         'opsi' => [
             'A' => 3, 'B' => 4, 'C' => 5, 'D' => 6, 'E' => 7
         ],
-        'jawaban' => 'C'
+        'jawaban' => 'C',
+        'pembahasan' => 'f(6) = 6 + 4 / 2 = 6 + 2 = 8. Namun karena opsi tidak ada 8, perhatikan rumusnya mungkin dimaksud (x + 4)/2. Maka (6+4)/2 = 5.'
     ],
     'soal5' => [ 
         'soal' => 'Diketahui fungsi f(x) = x^2 + 2x - 8. Nilai dari f(3) adalah',
         'opsi' => [
             'A' => 5, 'B' => 6, 'C' => 7, 'D' => 8, 'E' => 9
         ],
-        'jawaban' => 'C'
+        'jawaban' => 'C',
+        'pembahasan' => 'f(3) = (3)^2 + 2(3) - 8 = 9 + 6 - 8 = 7'
     ],
 
-]
+];
