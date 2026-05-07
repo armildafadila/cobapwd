@@ -13,7 +13,7 @@ $materi_fungsi = [
             'A' => 0 , 'B' => 1, 'C' => 2, 'D' => 3, 'E' => 4
         ],
         'jawaban' => 'A',
-        'pembahasan' => 'Substitusikan x = 4 ke fungsi. f(4)'
+        'pembahasan' => 'Substitusikan x = 4 ke fungsi. f(4) = 2(4) + 3 = 8 + 3 = 11'
     ],
     'soal3' => [ 
         'soal' => 'Jika f(x)=3x−7, maka nilai f(−2) adalah',
@@ -21,6 +21,8 @@ $materi_fungsi = [
             'A' => -13, 'B' => -12, 'C' => -11, 'D' => -10, 'E' => -9
         ],
         'jawaban' => 'A'
+        'pembahasan' => 'f(-2)'
+
     ],
     'soal4' => [ 
         'soal' => 'Diketahui fungsi f(x) = x + 4 / 2. Nilai dari f(6) adalah',
