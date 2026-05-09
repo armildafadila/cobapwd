@@ -68,8 +68,14 @@ session_start();
   padding: 10px;
   background-color: white;
 }
-.opsi{
- 
+.opsi-hover{
+  transition:0.3s;
+  cursor: pointer;
+
+}
+.opsi-hover:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 
