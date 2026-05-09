@@ -85,6 +85,8 @@ session_start();
   border-color: #4f7726;
   background-color: #edf5e6;
 }
+b{
+}
   </style>
 
 </head>
