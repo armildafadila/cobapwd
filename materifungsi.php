@@ -139,7 +139,7 @@ session_start();
             $nomor = 1;
             foreach($materi_fungsi as $kode => $data) {
             ?>
-             <h6>Soal Nomor <?=$nomor; ?></h6>
+             <h6>Soal Nomor <?=$nomor; ?> / 5</h6>
              <hr>
              <p> 
               <?= $data['soal']; ?>
@@ -150,9 +150,11 @@ session_start();
               <div class="opsi">
                 <input type="radio" name="jawaban[<?= $kode;?>]" value ="<?= $huruf; ?>" >
                 <b>
+                  <hr>
                   <?=$huruf; ?>.
                 </b>
                 <?= $opsi; ?>
+                
               </div>
              
            <?php } ?>
