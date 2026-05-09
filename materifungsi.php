@@ -77,8 +77,9 @@ session_start();
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-
-
+.opsi input[type="radio"]:checked{
+    color: #4f7726;
+}
   </style>
 
 </head>
