@@ -16,28 +16,48 @@ session_start();
   
   <style>
     .btn-hijau-custom {
-      background-color: #4f7726;
-      color: white;
-      border: none;
-    }
+    background-color: #4f7726;
+    color: white;
+    border: none;
+}
 
-    .baris-soal {
-      display: flex;
-      align-items: center;
-      gap: 300px; 
-    }
-    .text-atas {
-      width:320px;
-      font-size:22px;
-      font-weight:bold;
-    }
-    .isi-teks {
-      font-size:22px;
-      font-weight:600;
-     color:#4f7726;
-      letter-spacing:1px;
-    }
-    
+.card{
+    width: 600px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.20);
+}
+
+.card-header{
+    background-color: white;
+    border: none;
+    padding: 30px;
+}
+
+.baris-soal{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.text-atas{
+    width: 320px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #4f7726;
+
+}
+
+.isi-atas,
+.isi-bawah{
+    font-size: 22px;
+    color: #4f7726;
+}
+
+.isi-bawah{
+    color: #4f7726;
+    font-weight: bold;
+}
   </style>
 
 </head>
@@ -89,7 +109,8 @@ session_start();
           <span class= "text-atas">Materi</span>
           <span class="isi-atas">FUNGSI</span>
           </div>
-        
+        <hr>
+
           <div class="baris-soal">
           <span class="text-atas">Kelas</span>
           <span class="isi-bawah"> 10 </span>
