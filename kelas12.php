@@ -135,7 +135,7 @@
 
   <div class="col-md-4">
     <div class="card">
-    <img src="integral.png" class="card-img-top" alt="fungsi">
+    <img src="foto/integral.png" class="card-img-top" alt="fungsi">
     <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">INTEGRAL</h5>
     <p class="card-text">Latihan soal integral untuk menguji pemahaman luas daerah serta hubungan dengan turunan.</p>
@@ -147,7 +147,7 @@
 
 <div class="col-md-4">
   <div class="card">
-  <img src="dimensi3 (2).png" class="card-img-top" alt="baris">
+  <img src="foto/dimensi3 (2).png" class="card-img-top" alt="baris">
   <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">DIMENSI TIGA</h5>
     <p class="card-text">Latihan soal dimensi tiga untuk menguji pemahaman jarak dan sudut dalam bangun ruang.</p>
@@ -159,7 +159,7 @@
 
 <div class="col-md-4">
   <div class="card">
-  <img src="peluang.png" class="card-img-top" alt="trigonometri">
+  <img src="foto/peluang.png" class="card-img-top" alt="trigonometri">
   <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">PELUANG</h5>
     <p class="card-text">Latihan soal peluang untuk menguji pemahaman kemungkinan kejadian serta perhitungan kombinasi dan permutasi./p>

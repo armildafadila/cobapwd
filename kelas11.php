@@ -117,7 +117,7 @@
 
   <div class="col-md-4">
     <div class="card">
-    <img src="turunan.png" class="card-img-top" alt="fungsi">
+    <img src="foto/turunan.png" class="card-img-top" alt="fungsi">
     <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">TURUNAN</h5>
     <p class="card-text">Latihan soal turunan untuk menguji pemahaman perubahan nilai serta menentukan gradien dan nilai maksimum atau minimum</p>
@@ -129,7 +129,7 @@
 
 <div class="col-md-4">
   <div class="card">
-  <img src="matriks.png" class="card-img-top" alt="baris">
+  <img src="foto/matriks.png" class="card-img-top" alt="baris">
   <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">MATRIKS</h5>
     <p class="card-text">Latihan soal matriks untuk menguji pemahaman operasi, determinan, dan invers pada susunan bilangan.</p>
@@ -141,7 +141,7 @@
 
 <div class="col-md-4">
   <div class="card">
-  <img src="programlineare.png" class="card-img-top" alt="trigonometri">
+  <img src="foto/programlineare.png" class="card-img-top" alt="trigonometri">
   <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">PROGRAM LINIER</h5>
     <p class="card-text">Latihan soal program linear untuk menguji pemahaman sistem pertidaksamaan dan menentukan nilai optimum.</p>
