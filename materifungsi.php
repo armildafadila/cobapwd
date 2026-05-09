@@ -30,6 +30,8 @@ session_start();
 .card-bawah {
     margin-top: -40px;
     padding: 20px;
+    background-color: white;
+
   }
 
 .card-header{
@@ -61,6 +63,11 @@ session_start();
 .isi-bawah{
     color: #4f7726;
     font-weight: bold;
+}
+.card-body {
+  padding: 10px;
+  background-color: white;
+
 }
   </style>
 
@@ -125,9 +132,9 @@ session_start();
 
 <div class="d-flex justify-content-center">
   <div class="card-bawah p-3">
-        <div class="card-header">
+        <div class="card-bodyr">
           <form class="form" action="hasil.php" method="POST">
-            <h3>yey</h3>
+            <h6>Soal Nomor 1 / 5</h6>
 </form>
 </div>
 </div>
