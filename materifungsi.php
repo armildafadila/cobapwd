@@ -67,8 +67,9 @@ session_start();
 .card-body {
   padding: 10px;
   background-color: white;
-
 }
+
+
   </style>
 
 </head>
@@ -134,7 +135,14 @@ session_start();
   <div class="card-bawah p-3">
         <div class="card-bodyr">
           <form class="form" action="hasil.php" method="POST">
-            <h6>Soal Nomor 1 / 5</h6>
+            <h6>Soal Nomor 1 / 5 </h6>
+            <hr>
+            <?php
+            $nomor = 1;
+            foreach($fungsi.php as $)
+
+
+
 </form>
 </div>
 </div>
