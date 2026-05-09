@@ -117,10 +117,10 @@
     <h2>Pilih Materi</h2>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-5">
       <div class="input-group">
         <input class="form-control" type="text" placeholder="Cari Materi"> 
-        <button class="btn btn-success" type="button">
+        <button class="btn-hijau-custom " type="button">
         🔍
         </button>
       </div>
