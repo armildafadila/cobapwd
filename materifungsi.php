@@ -81,6 +81,10 @@ session_start();
 .radio-warna{
   accent-color: #4f7726;
 }
+.opsi-pilihan:has(input:checked) {
+  border-color: #4f7726;
+  background-color: #edf5e6;
+}
   </style>
 
 </head>
@@ -159,7 +163,7 @@ session_start();
              foreach($data['opsi'] as $huruf => $opsi) {
               ?>
               <div class="opsi">
-                <label class="border rounded p-4 mb-3 d-block shadow-sm opsi-hover">
+                <label class="border rounded p-4 mb-3 d-block shadow-sm opsi-hover opsi-pilihan">
                 <input type="radio" name="jawaban[<?= $kode;?>]" value ="<?= $huruf; ?>" class="radio-warna">
                 <b>                  
                 <?=$huruf; ?>.
