@@ -149,9 +149,7 @@ session_start();
               ?>
               <div class="opsi">
                 <input type="radio" name="jawaban[<?= $kode;?>]" value ="<?= $huruf; ?>" >
-                <b>
-                  <hr>
-                  <?=$huruf; ?>.
+                <b>                  <?=$huruf; ?>.
                 </b>
                 <?= $opsi; ?>
                 
