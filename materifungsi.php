@@ -136,10 +136,26 @@ session_start();
         <div class="card-bodyr">
           <form class="form" action="hasil.php" method="POST">
             <h6>Soal Nomor 1 / 5 </h6>
-            <hr>
             <?php
             $nomor = 1;
-            foreach($fungsi.php as $)
+            foreach($fungsi as $kode => $data) {
+            ?>
+             <h6>Soal Nomor <?=$nomor; ?></h6>
+             <hr>
+             <p> 
+              <?= $data['soal']; ?>
+
+             </p>
+             <?php
+             foreach($data['opsi'] as $huruf => $opsi) {
+              ?>
+              <div class="opsi">
+                <input type="radio">
+              </div>
+             }
+           
+            }
+
 
 
 
