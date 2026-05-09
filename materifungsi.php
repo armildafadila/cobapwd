@@ -20,13 +20,17 @@ session_start();
     color: white;
     border: none;
 }
-
+.card-bawah,
 .card{
     width: 600px;
     border: none;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.20);
 }
+.card-bawah {
+    margin-top: -40px;
+    padding: 20px;
+  }
 
 .card-header{
     background-color: white;
@@ -102,7 +106,7 @@ session_start();
     </div>
 
 </nav>
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center mt-4">
   <div class="card p-3">
         <div class="card-header">
           <div class="baris-soal">
@@ -116,7 +120,14 @@ session_start();
           <span class="isi-bawah"> 10 </span>
     </div>      
     </div>
-<form class="form" action="hasil.php" method="POST">
-    
-        
-        <div class="flex">
+</div>
+</div>
+
+<div class="d-flex justify-content-center">
+  <div class="card-bawah p-3">
+        <div class="card-header">
+          <form class="form" action="hasil.php" method="POST">
+            <h3>yey</h3>
+</form>
+</div>
+</div>
