@@ -78,7 +78,11 @@ session_start();
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 .opsi input[type="radio"]:checked{
-    color: #4f7726;
+  background-color: #4f7726;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border-color= #4f7726;
 }
   </style>
 
@@ -166,7 +170,7 @@ session_start();
                 <?= $opsi; ?>
                 
               </div>
-             
+</label>
            <?php } ?>
            <?php
            $nomor++;
