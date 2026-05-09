@@ -118,7 +118,7 @@
 
   <div class="col-md-4">
     <div class="card">
-    <img src="fungsi.png" class="card-img-top" alt="fungsi">
+    <img src="foto/fungsi.png" class="card-img-top" alt="fungsi">
     <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">FUNGSI</h5>
     <p class="card-text">Latihan soal fungsi untuk menguji pemahaman hubungan antara nilai x dan y melalui berbagai bentuk soal dan grafik.</p>
@@ -130,7 +130,7 @@
 
 <div class="col-md-4">
   <div class="card">
-  <img src="barisanderet.png" class="card-img-top" alt="baris">
+  <img src="foto/barisanderet.png" class="card-img-top" alt="baris">
   <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">BARISAN & DERET</h5>
     <p class="card-text">Latihan soal barisan dan deret untuk menguji pemahaman pola bilangan serta cara menentukan suku dan jumlahnya.</p>
@@ -142,7 +142,7 @@
 
 <div class="col-md-4">
   <div class="card">
-  <img src="trigonometri.png" class="card-img-top" alt="trigonometri">
+  <img src="foto/trigonometri.png" class="card-img-top" alt="trigonometri">
   <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">TRIGONOMETRI</h5>
     <p class="card-text">Latihan soal trigonometri untuk menguji pemahaman tentang hubungan sudut dan sisi pada segitiga serta penerapannya dalam berbagai bentuk soal.</p>
