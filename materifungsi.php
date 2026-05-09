@@ -68,6 +68,9 @@ session_start();
   padding: 10px;
   background-color: white;
 }
+.opsi{
+ 
+}
 
 
   </style>
@@ -148,6 +151,7 @@ session_start();
              foreach($data['opsi'] as $huruf => $opsi) {
               ?>
               <div class="opsi">
+                <label class="border rounded p-4 mb-3 d-block shadow-sm opsi-hover">
                 <input type="radio" name="jawaban[<?= $kode;?>]" value ="<?= $huruf; ?>" >
                 <b>                  
                 <?=$huruf; ?>.
