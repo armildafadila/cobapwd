@@ -77,12 +77,9 @@ session_start();
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-.opsi input[type="radio"]:checked{
-  background-color: #4f7726;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 8px;
-  border-color= #4f7726;
+
+.radio-warna{
+  accent-color: #4f7726;
 }
   </style>
 
@@ -163,7 +160,7 @@ session_start();
               ?>
               <div class="opsi">
                 <label class="border rounded p-4 mb-3 d-block shadow-sm opsi-hover">
-                <input type="radio" name="jawaban[<?= $kode;?>]" value ="<?= $huruf; ?>" >
+                <input type="radio" name="jawaban[<?= $kode;?>]" value ="<?= $huruf; ?>" class="radio-warna">
                 <b>                  
                 <?=$huruf; ?>.
                 </b>
