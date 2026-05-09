@@ -135,27 +135,33 @@ session_start();
   <div class="card-bawah p-3">
         <div class="card-bodyr">
           <form class="form" action="hasil.php" method="POST">
-            <h6>Soal Nomor 1 / 5 </h6>
             <?php
             $nomor = 1;
-            foreach($fungsi as $kode => $data) {
+            foreach($materi_fungsi as $kode => $data) {
             ?>
              <h6>Soal Nomor <?=$nomor; ?></h6>
              <hr>
              <p> 
               <?= $data['soal']; ?>
-
              </p>
              <?php
              foreach($data['opsi'] as $huruf => $opsi) {
               ?>
               <div class="opsi">
-                <input type="radio">
+                <input type="radio" name="jawaban[<?= $kode;?>]" value ="<?= $huruf; ?>" >
+                <b>
+                  <?=$huruf; ?>.
+                </b>
+                <?= $opsi; ?>
               </div>
-             }
-           
-            }
+             
+           <?php } ?>
+           <?php
+           $nomor++;
 
+            }
+            ?>
+    <button type="submit" class="btn btn-hijau-custom w-100">Kirim Jawaban</button>
 
 
 
