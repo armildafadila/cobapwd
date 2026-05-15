@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+
+<?php
+include 'koneksi.php';
+
+$kelas10 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='10'");
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -111,48 +116,32 @@
 
     </div>
 </div>
+<?php while($data = mysqli_fetch_assoc($kelas10)) { ?>
 
-<div class="container mt-4">
-  <div class="row g-4">
-
-
-  <div class="col-md-4">
-    <div class="card">
-    <img src="foto/fungsi.png" class="card-img-top" alt="fungsi">
+<div class="col-md-4">
+  <div class="card">
+  <img src="foto/<?= $data['gambar']; ?>" class="card-img-top">
     <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">FUNGSI</h5>
-    <p class="card-text">Latihan soal fungsi untuk menguji pemahaman hubungan antara nilai x dan y melalui berbagai bentuk soal dan grafik.</p>
-    <a href="materifungsi.php" class="btn btn-hijau-custom">Kerjakan Soal</a>
+
+      <h5 class="card-title">
+        <?= $data['nama_materi']; ?>
+      </h5>
+
+      <p class="card-text">
+        <?= $data['deskripsi']; ?>
+      </p>
+
+      <a href="<?= $data['link']; ?>" class="btn btn-hijau-custom">
+      Kerjakan Soal
+      </a>
+
     </div>
   </div>
 </div>
 
-
-<div class="col-md-4">
-  <div class="card">
-  <img src="foto/barisanderet.png" class="card-img-top" alt="baris">
-  <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">BARISAN & DERET</h5>
-    <p class="card-text">Latihan soal barisan dan deret untuk menguji pemahaman pola bilangan serta cara menentukan suku dan jumlahnya.</p>
-    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
-    </div>
-  </div>
-</div>
+<?php } ?>
 
 
-<div class="col-md-4">
-  <div class="card">
-  <img src="foto/trigonometri.png" class="card-img-top" alt="trigonometri">
-  <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">TRIGONOMETRI</h5>
-    <p class="card-text">Latihan soal trigonometri untuk menguji pemahaman tentang hubungan sudut dan sisi pada segitiga serta penerapannya dalam berbagai bentuk soal.</p>
-    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
-    </div>
-  </div>
-</div>
-
-</div>
-</div>
 
 <footer class="footer">
         <div class="container">

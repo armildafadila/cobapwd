@@ -1,9 +1,13 @@
-<!DOCTYPE html>
+<?php
+include 'koneksi.php';
+
+$kelas12 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='12'");
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelas 10</title>
+    <title>Kelas 12</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" href="style.css">
 
@@ -144,29 +148,30 @@
   </div>
 </div>
 
+<?php while($data = mysqli_fetch_assoc($kelas12)) { ?>
 
 <div class="col-md-4">
   <div class="card">
-  <img src="foto/dimensi3 (2).png" class="card-img-top" alt="baris">
-  <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">DIMENSI TIGA</h5>
-    <p class="card-text">Latihan soal dimensi tiga untuk menguji pemahaman jarak dan sudut dalam bangun ruang.</p>
-    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
+  <img src="foto/<?= $data['gambar']; ?>" class="card-img-top">
+    <div class="card-body">
+
+      <h5 class="card-title">
+        <?= $data['nama_materi']; ?>
+      </h5>
+
+      <p class="card-text">
+        <?= $data['deskripsi']; ?>
+      </p>
+
+     <a href="<?= $data['link']; ?>" class="btn btn-hijau-custom">
+      Kerjakan Soal
+      </a>
+
     </div>
   </div>
 </div>
 
-
-<div class="col-md-4">
-  <div class="card">
-  <img src="foto/peluang.png" class="card-img-top" alt="trigonometri">
-  <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">PELUANG</h5>
-    <p class="card-text">Latihan soal peluang untuk menguji pemahaman kemungkinan kejadian serta perhitungan kombinasi dan permutasi./p>
-    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
-    </div>
-  </div>
-</div>
+<?php } ?>
 
 </div>
 </div>

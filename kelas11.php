@@ -1,3 +1,8 @@
+<?php
+include 'koneksi.php';
+
+$kelas11 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='11'");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -114,44 +119,32 @@
 <div class="container mt-4">
   <div class="row g-4">
 
+<?php while($data = mysqli_fetch_assoc($kelas11)) { ?>
 
-  <div class="col-md-4">
-    <div class="card">
-    <img src="foto/turunan.png" class="card-img-top" alt="fungsi">
+<div class="col-md-4">
+  <div class="card">
+  <img src="foto/<?= $data['gambar']; ?>" class="card-img-top">
     <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">TURUNAN</h5>
-    <p class="card-text">Latihan soal turunan untuk menguji pemahaman perubahan nilai serta menentukan gradien dan nilai maksimum atau minimum</p>
-    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
+
+      <h5 class="card-title">
+        <?= $data['nama_materi']; ?>
+      </h5>
+
+      <p class="card-text">
+        <?= $data['deskripsi']; ?>
+      </p>
+
+      <a href="<?= $data['link']; ?>" class="btn btn-hijau-custom">
+      Kerjakan Soal
+      </a>
+
     </div>
   </div>
 </div>
 
-
-<div class="col-md-4">
-  <div class="card">
-  <img src="foto/matriks.png" class="card-img-top" alt="baris">
-  <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">MATRIKS</h5>
-    <p class="card-text">Latihan soal matriks untuk menguji pemahaman operasi, determinan, dan invers pada susunan bilangan.</p>
-    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
-    </div>
-  </div>
-</div>
+<?php } ?>
 
 
-<div class="col-md-4">
-  <div class="card">
-  <img src="foto/programlineare.png" class="card-img-top" alt="trigonometri">
-  <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">PROGRAM LINIER</h5>
-    <p class="card-text">Latihan soal program linear untuk menguji pemahaman sistem pertidaksamaan dan menentukan nilai optimum.</p>
-    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
-    </div>
-  </div>
-</div>
-
-</div>
-</div>
 
 <footer class="footer">
         <div class="container">
