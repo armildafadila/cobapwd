@@ -1,7 +1,7 @@
 <?php
 include 'koneksi.php';
 session_start();
-$fungsi = mysqli_query($koneksi, "SELECT * FROM soal WHERE id_materi='1'");
+$fungsi = mysqli_query($koneksi, "SELECT * FROM soal WHERE id_materi='4'");
 ?>
 <!DOCTYPE html>
 <html lang="en">

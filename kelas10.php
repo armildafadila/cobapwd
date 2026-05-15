@@ -122,7 +122,7 @@
     <div class="card-body">
     <h5 class="card-title" style="font-weight: bold;">FUNGSI</h5>
     <p class="card-text">Latihan soal fungsi untuk menguji pemahaman hubungan antara nilai x dan y melalui berbagai bentuk soal dan grafik.</p>
-    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
+    <a href="materifungsi.php" class="btn btn-hijau-custom">Kerjakan Soal</a>
     </div>
   </div>
 </div>
