@@ -1,7 +1,12 @@
 <?php
 include 'koneksi.php';
 session_start();
+
 $fungsi = mysqli_query($koneksi, "SELECT * FROM soal WHERE id_materi='1'");
+
+if(!$fungsi){
+    die(mysqli_error($koneksi));
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
