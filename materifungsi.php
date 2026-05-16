@@ -152,11 +152,15 @@ if(!$fungsi){
 
 <div class="d-flex justify-content-center">
   <div class="card-bawah p-3">
-        <div class="card-bodyr">
-          <form class="form" action="hasil.php" method="POST">
+        <div class="card-body">
+          <form class="form" action="proseshasil.php" method="POST">
+
+          <input type="hidden" name="id_users" value="1">
+          <input type="hidden" name="id_materi" value="1">
             <?php
             $nomor = 1;
-            while($data = mysqli_fetch_assoc($fungsi))  {          ?>
+            while($data = mysqli_fetch_assoc($fungsi))  {         
+             ?>
              <h6>Soal Nomor <?=$nomor; ?> / 5</h6>
              <hr>
              <p> 
@@ -263,10 +267,7 @@ if(!$fungsi){
         <p>© 2026 PT MathPartner. All rights reserved.</p>
         <p>Terms of Service | Policy | Service Level Agreement</p>
     </div>
-</body>
-</html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 </html>

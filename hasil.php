@@ -10,6 +10,9 @@ $nilai = $data['nilai'];
 $jumlah_benar = $data['jumlah_benar'];
 $jumlah_salah = $data['jumlah_salah'];
 
+$id_users = $data['id_users'];
+$id_materi = $data['id_materi'];
+
 
 if($nilai >= 80){
     $status = "HEBAT";
@@ -133,27 +136,52 @@ else{
 
   <div class="card-header text-center bg-white py-3">
 
-    <h5 class="fw-bold mb-1">Hallo, <?= $nama ?>!</h5>
+    <h5 class="fw-bold mb-1">Hallo, <?= $id_users ?>!</h5>
     <p>Hasil Pengerjaan soal  <strong><?= $id_materi?></strong></p>
         </div>
 
 
      <p class="pesan text-danger text-center"><?= $pesan ?></p>
+        <div class="text-center">
+
+    <h1 class="fw-bold text-success">
+        <?= $nilai ?>
+    </h1>
+
+    <p>Nilai Kamu</p>
+
+</div>
+
+<hr>
+
+<div class="row text-center">
+
+    <div class="col-6">
+
+        <h3 class="text-success">
+            <?= $jumlah_benar ?>
+        </h3>
+
+        <p>Benar</p>
+
+    </div>
+
+    <div class="col-6">
+
+        <h3 class="text-danger">
+            <?= $jumlah_salah ?>
+        </h3>
+
+        <p>Salah</p>
+
+    </div>
+
+</div>
+
+<hr>
 
      <!-- klo mau nambahin ratting tapi nnti aja -->
-    <div class="text-center">
-
-    // perulangan untuk menampilkan jumlah hati sesuai dengan rating yang diberikan oleh fans
-     <?php
-     $i = 0;
-     while ($i < $id_hasil){
-        echo "<span class='hati'>❤️</span>";
-        $i++;
-     }
-     ?>
-     </div>
-   <hr>
-
+   
 
 <!-- d-flex justify dll (biar button nya di tengah) -->
  <div class="d-flex justify-content-center">
