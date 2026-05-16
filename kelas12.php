@@ -107,15 +107,6 @@ $kelas12 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='12'");
     <h2>Pilih Materi</h2>
     </div>
 
-    <div class="col-md-5">
-      <div class="input-group">
-        <input class="form-control" type="text" placeholder="Cari Materi"> 
-        <button class="btn-hijau-custom " type="button">
-        🔍
-        </button>
-      </div>
-      </div>
-
     </div>
 </div>
 

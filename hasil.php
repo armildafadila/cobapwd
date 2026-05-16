@@ -16,7 +16,7 @@ $nama_materi = $data_materi['nama_materi'] ?? 'Materi Tidak Dikenal';
 
 }
 else{
-    header("Location: materifungsi.php");
+    header("Location: index.html");
     exit;
 }
 

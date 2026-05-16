@@ -225,8 +225,6 @@ if(!$fungsi){
 
     <button type="submit" class="btn btn-hijau-custom w-100">Kirim Jawaban</button>
 
-
-
 </form>
 </div>
 </div>

@@ -153,10 +153,15 @@ if(!$fungsi){
 <div class="d-flex justify-content-center">
   <div class="card-bawah p-3">
         <div class="card-bodyr">
-          <form class="form" action="hasil.php" method="POST">
+            <form class="form" action="proseshasil.php" method="POST">
+            <input type="hidden" name="id_materi" value="2">
+            <input type="hidden" name="id_users" value="2">
+
+
             <?php
             $nomor = 1;
-            while($data = mysqli_fetch_assoc($fungsi))  {          ?>
+            while($data = mysqli_fetch_assoc($fungsi))  {          
+            ?>
              <h6>Soal Nomor <?=$nomor; ?> / 5</h6>
              <hr>
              <p> 
