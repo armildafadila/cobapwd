@@ -78,15 +78,14 @@ session_start();
 </div>
 <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 ps-4">
+  <div class="row justify-content-between">                <div class="col-md-4 ps-4">
                     <div class="d-flex align-items-center">
                      <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
                 <h4 class="fw-bold m-0">MathPartner</h4>
                 </div>
                 <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                 <h4 class="fw-bold m-0 mt-3">Kontak Kami</h4>
                         <ul class="list">
                         <li class="text-tabel">Email: mathpartner@gmail.com</li>
