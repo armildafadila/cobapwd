@@ -62,7 +62,8 @@ $kelas10 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='10'");
         object-fit: contain;
       }
       .footer{
-        margin-top: 80px;
+        margin-top: 120px;
+        padding-top: 40px;
       }
      </style>
 </head>
@@ -129,9 +130,12 @@ $kelas10 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='10'");
   </div>
 </div>
 
+<br>
+
 <footer class="footer">
         <div class="container">
-  <div class="row justify-content-between">                <div class="col-md-4 ps-4">
+  <div class="row justify-content-between gy-4">                
+    <div class="col-md-4 ps-4">
                     <div class="d-flex align-items-center">
                      <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
                 <h4 class="fw-bold m-0">MathPartner</h4>

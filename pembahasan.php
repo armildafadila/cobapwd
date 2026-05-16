@@ -77,11 +77,6 @@ $nama_user = $_SESSION['nama'] ?? 'Siswa';
       padding: 10px;
       object-fit: contain;
     }
-
-    .container{
-      margin-top: 40px;
-    }
-
     .footer{
       margin-top: 80px;
     }
@@ -92,7 +87,7 @@ $nama_user = $_SESSION['nama'] ?? 'Siswa';
     <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container ">
     
-     <a class="navbar-brand d-flex align-items-center" href="#">
+     <a class="navbar-brand d-flex align-items-center" href="index.html">
       <a href="index.html">
       <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top"></a>
       <span class="text-judul">MathPartner</span>
@@ -146,31 +141,34 @@ $nama_user = $_SESSION['nama'] ?? 'Siswa';
         </div>
     </div>
 </div>
+
+
+<br>
 <footer class="footer">
         <div class="container">
-            <div class="row align-items-start">
-                <div class="col-md-4">
-                    <div class="d-flex align-items-center">
-                     <img src="foto/baru.png" alt="Logo" width="60" height="auto" class="me-2">
-                <h4 class="fw-bold m-0">MathPartner</h4>
-                </div>
-                <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
-                </div>
-                <div class="col-md-4">
-                <h4 class="fw-bold m-0">Kontak Kami</h4>
-                        <ul class="footer-list">
-                        <li class="text-tabel">Email: mathpartner@gmail.com</li>
-                        <li class="text-tabel">Telepon: 081234567890</li>
+  <div class="row justify-content-between">                
+    <div class="col-md-4 ps-4">
+      <div class="d-flex align-items-center">
+        <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
+          <h4 class="fw-bold m-0">MathPartner</h4>
+      </div>
+        <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
+      </div>
+        <div class="col-md-2">
+          <h4 class="fw-bold m-0 mt-3">Kontak Kami</h4>
+            <ul class="list">
+            <li class="text-tabel">Email: mathpartner@gmail.com</li>
+            <li class="text-tabel">Telepon: 081234567890</li>
+            </ul>
 
-                        </ul>
-                </div>
-                <div class="col-md-4">
-                <h4 class="fw-bold m-0">Ikuti Sosial Media</h4>
-                        <ul class="footer-list">
-                             <li class="text-tabel">Instagram: @mathpartner</li>
-                             <li class="text-tabel">Youtube: @mathpartner</li>
-                             <li class="text-tabel">Tiktok: @mathpartner</li>
-                        </ul>
+          </div>
+            <div class="col-md-3">
+              <h4 class="fw-bold m-0 mt-3">Ikuti Sosial Media</h4>
+                <ul class="list">
+                  <li class="text-tabel">Instagram: @mathpartner</li>
+                  <li class="text-tabel">Youtube: @mathpartner</li>
+                  <li class="text-tabel">Tiktok: @mathpartner</li>
+                </ul>
                 </div>
                 
                 <hr>
@@ -181,5 +179,10 @@ $nama_user = $_SESSION['nama'] ?? 'Siswa';
         <p>© 2026 PT MathPartner. All rights reserved.</p>
         <p>Terms of Service | Policy | Service Level Agreement</p>
     </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>

@@ -98,7 +98,7 @@ if(!$fungsi){
 <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container">
     
-     <a class="navbar-brand d-flex align-items-center" href="#">
+     <a class="navbar-brand d-flex align-items-center" href="index.html">
       <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top">
       <span class="text-judul">MathPartner</span>
     </a>
@@ -125,11 +125,6 @@ if(!$fungsi){
         </li>
 
         </ul>
-
-        <div class="d-flex ms-auto gap-3">
-        <a href="daftar.php" class="btn btn-hijau-custom">Daftar</a>        
-        <a href="masuk.php" class="btn btn-hijau-custom">Masuk</a>        
-    </div>
     </div>
 
 </nav>
@@ -232,8 +227,8 @@ if(!$fungsi){
 </div>
 </div>
 </div>
-<br>
 
+<br>
 <footer class="footer">
         <div class="container">
   <div class="row justify-content-between">                

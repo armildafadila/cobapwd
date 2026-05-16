@@ -98,7 +98,7 @@ if(!$fungsi){
 <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container">
     
-     <a class="navbar-brand d-flex align-items-center" href="#">
+     <a class="navbar-brand d-flex align-items-center" href="index.html">
       <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top">
       <span class="text-judul">MathPartner</span>
     </a>
@@ -125,11 +125,6 @@ if(!$fungsi){
         </li>
 
         </ul>
-
-        <div class="d-flex ms-auto gap-3">
-        <a href="daftar.php" class="btn btn-hijau-custom">Daftar</a>        
-        <a href="masuk.php" class="btn btn-hijau-custom">Masuk</a>        
-    </div>
     </div>
 
 </nav>
@@ -234,31 +229,33 @@ if(!$fungsi){
 </div>
 </div>
 </div>
+
+<br>
 <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 ps-4">
-                    <div class="d-flex align-items-center">
-                     <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
-                <h4 class="fw-bold m-0">MathPartner</h4>
-                </div>
-                <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
-                </div>
-                <div class="col-md-3">
-                <h4 class="fw-bold m-0 mt-3">Kontak Kami</h4>
-                        <ul class="list">
-                        <li class="text-tabel">Email: mathpartner@gmail.com</li>
-                        <li class="text-tabel">Telepon: 081234567890</li>
+  <div class="row justify-content-between">                
+    <div class="col-md-4 ps-4">
+      <div class="d-flex align-items-center">
+        <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
+          <h4 class="fw-bold m-0">MathPartner</h4>
+      </div>
+        <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
+      </div>
+        <div class="col-md-2">
+          <h4 class="fw-bold m-0 mt-3">Kontak Kami</h4>
+            <ul class="list">
+            <li class="text-tabel">Email: mathpartner@gmail.com</li>
+            <li class="text-tabel">Telepon: 081234567890</li>
+            </ul>
 
-                        </ul>
-                </div>
-                <div class="col-md-3">
-                <h4 class="fw-bold m-0 mt-3">Ikuti Sosial Media</h4>
-                        <ul class="list">
-                             <li class="text-tabel">Instagram: @mathpartner</li>
-                             <li class="text-tabel">Youtube: @mathpartner</li>
-                             <li class="text-tabel">Tiktok: @mathpartner</li>
-                        </ul>
+          </div>
+            <div class="col-md-3">
+              <h4 class="fw-bold m-0 mt-3">Ikuti Sosial Media</h4>
+                <ul class="list">
+                  <li class="text-tabel">Instagram: @mathpartner</li>
+                  <li class="text-tabel">Youtube: @mathpartner</li>
+                  <li class="text-tabel">Tiktok: @mathpartner</li>
+                </ul>
                 </div>
                 
                 <hr>

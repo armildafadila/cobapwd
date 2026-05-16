@@ -2,19 +2,6 @@
 include 'koneksi.php';
 session_start();
 
-$hasil = mysqli_query($koneksi, "SELECT * FROM soal");
-while($data = mysqli_fetch_assoc($hasil)){
-    $id = $data['id_soal'];
-    if(isset($_POST['jawaban'][$id])){
-        $jawaban_user = $_POST['jawaban'][$id];
-    } else {
-        $jawaban_user = '';
-    }
-    $jawaban_benar = $data['jawaban'];
-    if($jawaban_user == $jawaban_benar){
-        $jumlah_benar++;
-    } else {
-        $jumlah_salah++;
 $jawaban_user = $_POST['jawaban'];
 $id_materi = $_POST['id_materi'];
 $id_users = $_POST['id_users'];

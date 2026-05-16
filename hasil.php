@@ -1,18 +1,6 @@
 <?php
-$nilai = $_GET['nilai'];
-if($nilai >= 80){
-    $pesan = "Mantap! Pemahaman kamu udah bagus 🎉";
-}
-elseif($nilai >= 60){
-    $pesan = "Bagus, tapi masih perlu belajar lagi.";
-}
-else{
-    $pesan = "Yuk belajar lagi dan coba ulang lagi!";
-}
-?>
 include 'koneksi.php';
 session_start();
-
 
 if(isset($_SESSION['nilai'])) {
     $nilai = $_SESSION['nilai'];
@@ -20,36 +8,30 @@ if(isset($_SESSION['nilai'])) {
     $jumlah_salah = $_SESSION['salah'];
     $id_materi = $_SESSION['id_materi'];
 
-$query = "SELECT nama_materi FROM materi WHERE id_materi = id_materi";
-$hasil_materi = mysqli_query($koneksi, $query);
-$data_materi = mysqli_fetch_assoc($hasil_materi);
-$nama_materi = $data_materi['nama_materi'] ?? 'Materi Tidak Dikenal';
-
+    $query = "SELECT nama_materi FROM materi WHERE id_materi = '$id_materi'";
+    $hasil_materi = mysqli_query($koneksi, $query);
+    $data_materi = mysqli_fetch_assoc($hasil_materi);
+    $nama_materi = $data_materi['nama_materi'] ?? 'Materi Tidak Dikenal';
 }
 else{
     header("Location: index.html");
     exit;
 }
 
-// ambil nama user klo login
 $nama_user = $_SESSION['nama'] ?? 'peserta';
 
-// pesan dan status
 if($nilai >= 80){
     $status = "HEBAT";
     $pesan = "Keren banget! Kamu udah paham materinya 😎✨";
 }
-
 elseif($nilai >= 70){
     $status = "Cukup baik";
     $pesan = "Bagusss! Tinggal sedikit lagi buat jadi master matematika 📚😆";
 }
-
 else{
-    $status = "belajar lagi";
+    $status = "Belajar lagi";
     $pesan = "Jangan pantang menyerah yaa 💪😊 Coba latihan lagi biar makin jago!";
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -57,91 +39,50 @@ else{
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelas 10</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="style.css">
-
-     <style>
-       h2 {
-        text-align: left;
-        margin-top: 20px;
-        font-weight: bold;
-        color: #4f7726;
-
-    }
-
-    .btn-hijau-custom {
-      background-color: #4f7726;
-      color: white;
-      border: none;
-    }
-    .card{
-      max-width: 300px;
-      margin: auto;
-      height: 100%;
-      width: 400px;
-      margin: 50px auto;
-      border: none;
-      border-radius: 20px;
-      margin-top: 3px;
-    }
-    
-    .card-title{
-      color: #4f7726;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .card-text{
-      text-align: center;
-    }
-
-    .card-body{
-      display: flex;
-      flex-direction: column;
-    }
-
-    .card-body .btn{
-      margin-top: auto;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-      
-     }
-
-    .card-img-top {
-      height: 220px;
-      padding: 10px;
-      object-fit: contain;
-    }
-
-    .container{
-      margin-top: 40px;
-    }
-
-    .footer{
-      margin-top: 80px;
-    }
-
-    .card-header{
-        text-align: center;
-        background-color: #4f7726;
-        color: white;
-        
-    }
-    
-     </style>
+    <title>Hasil - MathPartner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .btn-hijau-custom {
+            background-color: #4f7726;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        .btn-hijau-custom:hover {
+            background-color: #3d5a1e;
+            color: white;
+        }
+        .card{
+            width: 400px;
+            margin: 50px auto;
+            border: none;
+            border-radius: 20px;
+        }
+        .card-header{
+            text-align: center;
+            background-color: #4f7726;
+            color: white;
+            border-radius: 20px 20px 0 0;
+        }
+        .nilai-besar {
+            font-size: 60px;
+            font-weight: bold;
+            color: #4f7726;
+        }
+        .footer {
+            margin-top: 80px;
+        }
+    </style>
 </head>
 <body>
-  
-    <nav class="navbar navbar-expand-lg navbar-custom">
+
+ <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container ">
     
-     <a class="navbar-brand d-flex align-items-center" href="#">
-      <a href="halaman1.html">
-      <img src="baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top"></a>
+     <a class="navbar-brand d-flex align-items-center" href="index.html">
       <a href="index.html">
       <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top"></a>
       <span class="text-judul">MathPartner</span>
@@ -160,110 +101,70 @@ else{
         <a class="nav-link" href="kelas12.php">Kelas 12</a>
         
     </div>
-
 </nav>
-<div class="d-flex justify-content-center align-items-center vh-100">
 
-    <div class="card p-4 shadow" style="width: 400px; border-radius: 20px;">
-
+<!-- HASIL -->
+<div class="container">
+    <div class="card shadow">
+        <div class="card-header">
+            <h5 class="fw-bold mb-1">Hallo!</h5>
+            <p>Hasil Pengerjaan Materi <strong><?= $nama_materi ?></strong></p>
+        </div>
         <div class="card-body text-center">
+            <p class="alert alert-info"><?= $pesan ?></p>
 
-            <h1 class="mb-3">Hasil Quiz</h1>
+            <h1 class="nilai-besar"><?= $nilai ?></h1>
+            <p>Nilai Kamu</p>
 
-            <h2 class="mb-3">Nilai Kamu : <?= $nilai; ?></h2>
+            <hr>
 
-            <p><?= $pesan; ?></p>
-
-            <div class="mt-4">
-
-                <a href="pembahasan.php" class="btn btn-success">
-                    Lihat Pembahasan
-                </a>
-
-                <a href="materifungsi.php" class="btn btn-secondary">
-                    Coba Lagi
-                </a>
-
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="text-success"><?= $jumlah_benar ?></h3>
+                    <p>Benar ✅</p>
+                </div>
+                <div class="col-6">
+                    <h3 class="text-danger"><?= $jumlah_salah ?></h3>
+                    <p>Salah ❌</p>
+                </div>
             </div>
 
+            <hr>
+
+            <div class="d-flex justify-content-center gap-3 mt-3">
+                <a href="pembahasan.php" class="btn-hijau-custom">Lihat Pembahasan</a>
+            </div>
         </div>
-
-    </div>
-
-</div>
-</body>
-
-
-<!-- Hasilll -->
- <div class="container">
- <div class="card shadow" >
-
- <!-- header -->
-  <div class="card-header">
-    <h5 class="fw-bold mb-1">Hallo!</h5>
-    <p>Hasil Pengerjaan soal  <strong><?= $nama_materi?></strong></p>
- </div>
-
- <div class="card-body">
-     <p class="pesan text-danger text-center"><?= $pesan ?></p>
-
-<div class="text-center">
-    <h1 class="nilai-besar"><?= $nilai ?></h1>
-    <p>Nilai Kamu</p>
-</div>
-
-<hr>
-
-<div class="row text-center">
-    <div class="col-6">
-        <h3 class="text-success"><?= $jumlah_benar ?>
-        </h3>
-        <p>Benar</p>
-    </div>
-
-    <div class="col-6">
-        <h3 class="text-danger">
-        <?= $jumlah_salah ?>
-        </h3>
-        <p>Salah</p>
     </div>
 </div>
 
-<hr>
-
-<!-- d-flex justify dll (biar button nya di tengah) -->
- <div class="d-flex justify-content-center gap-3 mt-3">
-    <a href="pembahasan.php" class="btn btn-hijau-custom">Lihat Pembahasan</a>
- </div>
-</div>
- </div>
- </div>
+<br>
 
 <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 ps-4">
-                    <div class="d-flex align-items-center">
-                     <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
-                <h4 class="fw-bold m-0">MathPartner</h4>
-                </div>
-                <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
-                </div>
-                <div class="col-md-3">
-                <h4 class="fw-bold m-0 mt-3">Kontak Kami</h4>
-                        <ul class="list">
-                        <li class="text-tabel">Email: mathpartner@gmail.com</li>
-                        <li class="text-tabel">Telepon: 081234567890</li>
+  <div class="row justify-content-between">                
+    <div class="col-md-4 ps-4">
+      <div class="d-flex align-items-center">
+        <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
+          <h4 class="fw-bold m-0">MathPartner</h4>
+      </div>
+        <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
+      </div>
+        <div class="col-md-2">
+          <h4 class="fw-bold m-0 mt-3">Kontak Kami</h4>
+            <ul class="list">
+            <li class="text-tabel">Email: mathpartner@gmail.com</li>
+            <li class="text-tabel">Telepon: 081234567890</li>
+            </ul>
 
-                        </ul>
-                </div>
-                <div class="col-md-3">
-                <h4 class="fw-bold m-0 mt-3">Ikuti Sosial Media</h4>
-                        <ul class="list">
-                             <li class="text-tabel">Instagram: @mathpartner</li>
-                             <li class="text-tabel">Youtube: @mathpartner</li>
-                             <li class="text-tabel">Tiktok: @mathpartner</li>
-                        </ul>
+          </div>
+            <div class="col-md-3">
+              <h4 class="fw-bold m-0 mt-3">Ikuti Sosial Media</h4>
+                <ul class="list">
+                  <li class="text-tabel">Instagram: @mathpartner</li>
+                  <li class="text-tabel">Youtube: @mathpartner</li>
+                  <li class="text-tabel">Tiktok: @mathpartner</li>
+                </ul>
                 </div>
                 
                 <hr>
@@ -273,6 +174,11 @@ else{
         <div class="footer-bawah">
         <p>© 2026 PT MathPartner. All rights reserved.</p>
         <p>Terms of Service | Policy | Service Level Agreement</p>
-        
-  </body>
+    </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
 </html>
