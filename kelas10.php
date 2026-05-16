@@ -41,36 +41,26 @@ $kelas10 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='10'");
         font-weight: bold;
         text-align: center;
       }
-
       .card-text{
         text-align: center;
       }
-
       .card-body{
         display: flex;
         flex-direction: column;
       }
-
       .card-body .btn{
         margin-top: auto;
       }
-
       .card:hover {
         transform: translateY(-10px);
         box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         
       }
-
       .card-img-top {
         height: 220px;
         padding: 10px;
         object-fit: contain;
       }
-
-      .container{
-        margin-top: 40px;
-      }
-
       .footer{
         margin-top: 80px;
       }
@@ -93,10 +83,10 @@ $kelas10 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='10'");
     <div class="collapse navbar-collapse ms-4">
       <ul class="navbar-nav">
 
-        <a class="nav-link active" href="index.html">Beranda</a>
-        <a class="nav-link active" href="kelas10.php">Kelas 10</a>
-        <a class="nav-link" href="kelas11.php">Kelas 11</a>
-        <a class="nav-link" href="kelas12.php">Kelas 12</a>    
+        <a  style="color: #4f7726;" class="nav-link active" href="index.html">Beranda</a>
+        <a  style="color: #4f7726;" class="nav-link active" href="kelas10.php">Kelas 10</a>
+        <a   style="color: #4f7726;"class="nav-link" href="kelas11.php">Kelas 11</a>
+        <a   style="color: #4f7726;"class="nav-link" href="kelas12.php">Kelas 12</a>    
     </div>
 
 </nav>
@@ -141,29 +131,28 @@ $kelas10 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='10'");
 
 <footer class="footer">
         <div class="container">
-  <div class="row justify-content-between">                
-    <div class="col-md-4 ps-4">
-      <div class="d-flex align-items-center">
-        <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
-          <h4 class="fw-bold m-0">MathPartner</h4>
-      </div>
-        <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
-      </div>
-        <div class="col-md-2">
-          <h4 class="fw-bold m-0 mt-3">Kontak Kami</h4>
-            <ul class="list">
-            <li class="text-tabel">Email: mathpartner@gmail.com</li>
-            <li class="text-tabel">Telepon: 081234567890</li>
-            </ul>
+  <div class="row justify-content-between">                <div class="col-md-4 ps-4">
+                    <div class="d-flex align-items-center">
+                     <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
+                <h4 class="fw-bold m-0">MathPartner</h4>
+                </div>
+                <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
+                </div>
+                <div class="col-md-2">
+                <h4 class="fw-bold m-0 mt-3">Kontak Kami</h4>
+                        <ul class="list">
+                        <li class="text-tabel">Email: mathpartner@gmail.com</li>
+                        <li class="text-tabel">Telepon: 081234567890</li>
 
-          </div>
-            <div class="col-md-3">
-              <h4 class="fw-bold m-0 mt-3">Ikuti Sosial Media</h4>
-                <ul class="list">
-                  <li class="text-tabel">Instagram: @mathpartner</li>
-                  <li class="text-tabel">Youtube: @mathpartner</li>
-                  <li class="text-tabel">Tiktok: @mathpartner</li>
-                </ul>
+                        </ul>
+                </div>
+                <div class="col-md-3">
+                <h4 class="fw-bold m-0 mt-3">Ikuti Sosial Media</h4>
+                        <ul class="list">
+                             <li class="text-tabel">Instagram: @mathpartner</li>
+                             <li class="text-tabel">Youtube: @mathpartner</li>
+                             <li class="text-tabel">Tiktok: @mathpartner</li>
+                        </ul>
                 </div>
                 
                 <hr>

@@ -63,10 +63,6 @@ $kelas11 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='11'");
         object-fit: contain;
       }
 
-      .container{
-        margin-top: 40px;
-      }
-
       .footer{
         margin-top: 80px;
       }
@@ -90,10 +86,10 @@ $kelas11 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='11'");
     <div class="collapse navbar-collapse ms-4">
       <ul class="navbar-nav">
 
-        <a class="nav-link active" href="index.html">Beranda</a>
-        <a class="nav-link active" href="kelas10.php">Kelas 10</a>
-        <a class="nav-link" href="kelas11.php">Kelas 11</a>
-        <a class="nav-link" href="kelas12.php">Kelas 12</a>
+        <a  style="color: #4f7726;" class="nav-link active" href="index.html">Beranda</a>
+        <a  style="color: #4f7726;" class="nav-link active" href="kelas10.php">Kelas 10</a>
+        <a   style="color: #4f7726;"class="nav-link" href="kelas11.php">Kelas 11</a>
+        <a   style="color: #4f7726;"class="nav-link" href="kelas12.php">Kelas 12</a>    
         
     </div>
 </nav>
@@ -140,25 +136,24 @@ $kelas11 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='11'");
 
 <footer class="footer">
         <div class="container">
-            <div class="row align-items-start">
-                <div class="col-md-4">
+  <div class="row justify-content-between">                <div class="col-md-4 ps-4">
                     <div class="d-flex align-items-center">
-                     <img src="foto/baru.png" alt="Logo" width="60" height="auto" class="me-2">
+                     <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
                 <h4 class="fw-bold m-0">MathPartner</h4>
                 </div>
                 <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
                 </div>
-                <div class="col-md-4">
-                <h4 class="fw-bold m-0">Kontak Kami</h4>
-                        <ul class="footer-list">
+                <div class="col-md-2">
+                <h4 class="fw-bold m-0 mt-3">Kontak Kami</h4>
+                        <ul class="list">
                         <li class="text-tabel">Email: mathpartner@gmail.com</li>
                         <li class="text-tabel">Telepon: 081234567890</li>
 
                         </ul>
                 </div>
-                <div class="col-md-4">
-                <h4 class="fw-bold m-0">Ikuti Sosial Media</h4>
-                        <ul class="footer-list">
+                <div class="col-md-3">
+                <h4 class="fw-bold m-0 mt-3">Ikuti Sosial Media</h4>
+                        <ul class="list">
                              <li class="text-tabel">Instagram: @mathpartner</li>
                              <li class="text-tabel">Youtube: @mathpartner</li>
                              <li class="text-tabel">Tiktok: @mathpartner</li>
@@ -173,5 +168,10 @@ $kelas11 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='11'");
         <p>© 2026 PT MathPartner. All rights reserved.</p>
         <p>Terms of Service | Policy | Service Level Agreement</p>
     </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>
