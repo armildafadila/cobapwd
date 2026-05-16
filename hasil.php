@@ -8,8 +8,13 @@ if(isset($_SESSION['nilai'])) {
     $jumlah_benar = $_SESSION['benar'];
     $jumlah_salah = $_SESSION['salah'];
     $id_materi = $_SESSION['id_materi'];
-}
 
+$query = "SELECT nama_materi FROM materi WHERE id_materi = id_materi";
+$hasil_materi = mysqli_query($koneksi, $query);
+$data_materi = mysqli_fetch_assoc($hasil_materi);
+$nama_materi = $data_materi['nama_materi'] ?? 'Materi Tidak Dikenal';
+
+}
 else{
     header("Location: materifungsi.php");
     exit;
@@ -150,7 +155,7 @@ else{
  <!-- header -->
   <div class="card-header">
     <h5 class="fw-bold mb-1">Hallo, <?= $nama_user ?>!</h5>
-    <p>Hasil Pengerjaan soal  <strong><?= $id_materi?></strong></p>
+    <p>Hasil Pengerjaan soal  <strong><?= $nama_materi?></strong></p>
  </div>
 
  <div class="card-body">
