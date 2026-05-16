@@ -8,7 +8,11 @@ $jumlah_salah = 0;
 $hasil = mysqli_query($koneksi, "SELECT * FROM soal");
 while($data = mysqli_fetch_assoc($hasil)){
     $id = $data['id_soal'];
-    $jawaban_user = $_POST['jawaban'][$id];
+    if(isset($_POST['jawaban'][$id])){
+        $jawaban_user = $_POST['jawaban'][$id];
+    } else {
+        $jawaban_user = '';
+    }
     $jawaban_benar = $data['jawaban'];
     if($jawaban_user == $jawaban_benar){
         $jumlah_benar++;
