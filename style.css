@@ -14,12 +14,16 @@ body {
 }
 .footer {
  background-color: #FFE066;
-  margin-top: 100px;
-  padding: 40px 0;
+  margin-top: auto;
+  padding: 10px 0 15px;
   color:#4f7726; 
+  margin-bottom: 0;
 
 }
-
+.footer .col-md-2,
+.footer .col-md-3 {
+  text-align: left;
+}
 .footer .row{
   align-items: flex-start;
 }
@@ -45,12 +49,15 @@ body {
   margin-bottom: 8px;
 }
 .logo-beranda {
-    width: 50%;
     justify-content: center;
     padding-top: 10px;
     align-items: center;
     display: flex;
-    margin-top: -50px;
+
+}
+.hero-img{
+    width: 500px;
+    height: auto;
 }
 
 .footer-bawah {
@@ -59,6 +66,8 @@ body {
   padding: 15px 0;
   font-size: 13px;
   text-align: center;
+  margin-top: 0;
+ 
 }
 .footer-bawah p {
   margin: 5px 0;
@@ -220,5 +229,9 @@ body {
 }
 
 .footer hr {
+  .footer hr {
+  margin: 20px 0 0;
+  opacity: 0.4;
+  width: 100%;
   border-color: rgba(0,0,0,0.2);
 }

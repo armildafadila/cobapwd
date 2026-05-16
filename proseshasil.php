@@ -1,9 +1,6 @@
 <?php
 include 'koneksi.php';
-$id_users = $_POST['id_users'];
-$id_materi = $_POST['id_materi'];
-$jumlah_benar = 0;
-$jumlah_salah = 0;
+session_start();
 
 $hasil = mysqli_query($koneksi, "SELECT * FROM soal");
 while($data = mysqli_fetch_assoc($hasil)){
@@ -18,22 +15,43 @@ while($data = mysqli_fetch_assoc($hasil)){
         $jumlah_benar++;
     } else {
         $jumlah_salah++;
+$jawaban_user = $_POST['jawaban'];
+$id_materi = $_POST['id_materi'];
+$id_users = $_POST['id_users'];
+
+$query = "SELECT * FROM soal WHERE id_materi = '$id_materi'";
+$ambil_data = mysqli_query($koneksi, $query);
+
+$jumlah_soal = 0;
+$benar = 0;
+
+while($data = mysqli_fetch_assoc($ambil_data)){
+    $jumlah_soal ++;
+
+    // ambil dari id_soal dan id_materi
+    $id_soal = $data['id_soal'];
+    $kunci = $data['jawaban_benar'];
+
+    if(isset($jawaban_user[$id_soal])) {
+        $jawaban_peserta = $jawaban_user[$id_soal];
+
+        if($jawaban_peserta == $kunci){
+            $benar ++;
+        }
     }
+
 }
 
-$nilai = $jumlah_benar * 20;
-$tanggal = date('Y-m-d');
 
-mysqli_query($koneksi, "INSERT INTO hasil VALUES(
-    '',
-    '$id_users',
-    '$id_materi',
-    '$jumlah_benar',
-    '$jumlah_salah',
-    '$nilai',
-    '$tanggal'
-)");
-header("Location: hasil.php?nilai=$nilai");
-exit;
+$salah = $jumlah_soal - $benar;
+$nilai = ($benar / $jumlah_soal) * 100;
+$skor_bulat = round($nilai);
 
+$_SESSION['total'] = $jumlah_soal;
+$_SESSION['benar'] = $benar;
+$_SESSION['salah'] = $salah;
+$_SESSION['nilai'] = $skor_bulat;
+$_SESSION['id_materi'] = $id_materi;
+
+header("Location: hasil.php");
 ?>
