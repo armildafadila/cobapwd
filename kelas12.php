@@ -136,18 +136,6 @@ $kelas12 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='12'");
 <div class="container mt-4">
   <div class="row g-4">
 
-
-  <div class="col-md-4">
-    <div class="card">
-    <img src="foto/integral.png" class="card-img-top" alt="fungsi">
-    <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">INTEGRAL</h5>
-    <p class="card-text">Latihan soal integral untuk menguji pemahaman luas daerah serta hubungan dengan turunan.</p>
-    <a href="#" class="btn btn-hijau-custom">Kerjakan Soal</a>
-    </div>
-  </div>
-</div>
-
 <?php while($data = mysqli_fetch_assoc($kelas12)) { ?>
 
 <div class="col-md-4">
