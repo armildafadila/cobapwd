@@ -160,7 +160,6 @@ if(!$fungsi){
           <form class="form" action="proseshasil.php" method="POST">
           <input type="hidden" name="id_users" value="1">
           <input type="hidden" name="id_materi" value="1">
-          
             <?php
             $nomor = 1;
             while($data = mysqli_fetch_assoc($fungsi))  {         

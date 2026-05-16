@@ -37,17 +37,17 @@ $nama_user = $_SESSION['nama'] ?? 'peserta';
 // pesan dan status
 if($nilai >= 80){
     $status = "HEBAT";
-    $pesan = "KEREN";
+    $pesan = "Keren banget! Kamu udah paham materinya 😎✨";
 }
 
 elseif($nilai >= 70){
     $status = "Cukup baik";
-    $pesan = "bagusss";
+    $pesan = "Bagusss! Tinggal sedikit lagi buat jadi master matematika 📚😆";
 }
 
 else{
-    $status = "beljaar lagi";
-    $pesan = "Jangan Pantang Menyerah ya";
+    $status = "belajar lagi";
+    $pesan = "Jangan pantang menyerah yaa 💪😊 Coba latihan lagi biar makin jago!";
 }
 
 ?>
@@ -154,7 +154,6 @@ else{
     <div class="collapse navbar-collapse ms-4">
       <ul class="navbar-nav">
 
-         <a class="nav-link active" href="halaman1.html">Beranda</a>
          <a class="nav-link active" href="index.html">Beranda</a>
         <a class="nav-link active" href="kelas10.php">Kelas 10</a>
         <a class="nav-link" href="kelas11.php">Kelas 11</a>
@@ -201,13 +200,12 @@ else{
 
  <!-- header -->
   <div class="card-header">
-    <h5 class="fw-bold mb-1">Hallo, <?= $nama_user ?>!</h5>
+    <h5 class="fw-bold mb-1">Hallo!</h5>
     <p>Hasil Pengerjaan soal  <strong><?= $nama_materi?></strong></p>
  </div>
 
  <div class="card-body">
      <p class="pesan text-danger text-center"><?= $pesan ?></p>
-
 
 <div class="text-center">
     <h1 class="nilai-besar"><?= $nilai ?></h1>
@@ -225,7 +223,7 @@ else{
 
     <div class="col-6">
         <h3 class="text-danger">
-            <?= $jumlah_salah ?>
+        <?= $jumlah_salah ?>
         </h3>
         <p>Salah</p>
     </div>
@@ -233,11 +231,8 @@ else{
 
 <hr>
 
-   
-
 <!-- d-flex justify dll (biar button nya di tengah) -->
  <div class="d-flex justify-content-center gap-3 mt-3">
-    
     <a href="pembahasan.php" class="btn btn-hijau-custom">Lihat Pembahasan</a>
  </div>
 </div>

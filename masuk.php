@@ -19,7 +19,6 @@ session_start();
       border: none;
     }
   </style>
-
 </head>
 
 <body>
@@ -27,39 +26,10 @@ session_start();
 <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container">
     
-     <a class="navbar-brand d-flex align-items-center" href="#">
+     <a class="navbar-brand d-flex align-items-center" href="index.html">
       <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top">
       <span class="text-judul">MathPartner</span>
     </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse ms-4">
-      <ul class="navbar-nav">
-
-        <a style="color: #4f7726;" class="nav-link active" href="tentang.html">Tentang</a>
-        <a style="color: #4f7726;" class="nav-link" href="#">Keunggulan</a>
-        <a style="color: #4f7726;" class="nav-link" href="#">Testimoni</a>
-        <li class="nav-item dropdown list-unstyled">
-          <a style="color: #4f7726;" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            Kelas
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="">Kelas 10</a></li>
-            <li><a class="dropdown-item" href="#">Kelas 11</a></li>
-            <li><a class="dropdown-item" href="#">Kelas 12</a></li>
-          </ul>
-        </li>
-
-        </ul>
-
-        <div class="d-flex ms-auto gap-3">
-        <a href="daftar.php" class="btn btn-outline-success">Daftar</a>        
-        <button class="btn btn-outline-success"> Masuk </button>
-    </div>
-    </div>
 
 </nav>
 <div class="d-flex justify-content-center">
@@ -144,7 +114,6 @@ session_start();
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 </html>
