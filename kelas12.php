@@ -74,43 +74,29 @@ $kelas12 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='12'");
      </style>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container ">
     
      <a class="navbar-brand d-flex align-items-center" href="#">
-      <a href="halaman1.html">
-      <img src="baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top"></a>
+      <a href="index.html">
+      <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top"></a>
       <span class="text-judul">MathPartner</span>
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon">
+      </span>
     </button>
 
     <div class="collapse navbar-collapse ms-4">
       <ul class="navbar-nav">
 
-         <a class="nav-link active" href="halaman1.html">Beranda</a>
-        <a class="nav-link active" href="tentang.html">Tentang</a>
-        <a class="nav-link" href="keunggulan.html">Keunggulan</a>
-        <a class="nav-link" href="testimoni.html">Testimoni</a>
-        <li class="nav-item dropdown list-unstyled">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            Kelas
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Kelas 10</a></li>
-            <li><a class="dropdown-item" href="#">Kelas 11</a></li>
-            <li><a class="dropdown-item" href="#">Kelas 12</a></li>
-          </ul>
-        </li>
-
-        </ul>
-
-        <div class="d-flex ms-auto gap-3">
-        <button class="btn btn-outline-success"> Daftar </button>
-        <button class="btn btn-outline-success"> Masuk </button>
-    </div>
+        <a class="nav-link active" href="index.html">Beranda</a>
+        <a class="nav-link active" href="kelas10.php">Kelas 10</a>
+        <a class="nav-link" href="kelas11.php">Kelas 11</a>
+        <a class="nav-link" href="kelas12.php">Kelas 12</a>
+        
     </div>
 
 </nav>
@@ -169,7 +155,7 @@ $kelas12 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='12'");
             <div class="row">
                 <div class="col-md-4 ps-4">
                     <div class="d-flex align-items-center">
-                     <img src="baru.png" alt="Logo" width="90" height="auto" class="me-2">
+                     <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
                 <h4 class="fw-bold m-0">MathPartner</h4>
                 </div>
                 <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>

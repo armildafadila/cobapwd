@@ -73,12 +73,13 @@ $kelas11 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='11'");
      </style>
 </head>
 <body>
+    
     <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container ">
     
      <a class="navbar-brand d-flex align-items-center" href="#">
-      <a href="halaman1.html">
-      <img src="baru.png" alt="Logo" width="90" class="me-2"></a>
+      <a href="index.html">
+      <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top"></a>
       <span class="text-judul">MathPartner</span>
     </a>
 
@@ -89,11 +90,11 @@ $kelas11 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='11'");
     <div class="collapse navbar-collapse ms-4">
       <ul class="navbar-nav">
 
-         <a class="nav-link active" href="halaman1.html">Beranda</a>
+         <a class="nav-link active" href="index.html">Beranda</a>
         <a class="nav-link active" href="kelas10.php">Kelas 10</a>
         <a class="nav-link" href="kelas11.php">Kelas 11</a>
         <a class="nav-link" href="kelas12.php">Kelas 12</a>
-
+        
     </div>
 
 </nav>
@@ -143,7 +144,8 @@ $kelas11 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='11'");
 </div>
 
 <?php } ?>
-
+  </div>
+</div>
 
 
 <footer class="footer">
@@ -151,7 +153,7 @@ $kelas11 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='11'");
             <div class="row align-items-start">
                 <div class="col-md-4">
                     <div class="d-flex align-items-center">
-                     <img src="baru.png" alt="Logo" width="60" height="auto" class="me-2">
+                     <img src="foto/baru.png" alt="Logo" width="60" height="auto" class="me-2">
                 <h4 class="fw-bold m-0">MathPartner</h4>
                 </div>
                 <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
