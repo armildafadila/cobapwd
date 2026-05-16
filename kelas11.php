@@ -19,63 +19,63 @@ $kelas11 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='11'");
         font-weight: bold;
         color: #4f7726;
 
-    }
+      }
 
-    .btn-hijau-custom {
-      background-color: #4f7726;
-      color: white;
-      border: none;
-    }
-    .card{
-      max-width: 300px;
-      margin: auto;
-      height: 100%;
-    }
+      .btn-hijau-custom {
+        background-color: #4f7726;
+        color: white;
+        border: none;
+      }
+      .card{
+        max-width: 300px;
+        margin: auto;
+        height: 100%;
+      }
 
-    .card-text{
-      text-align: center;
-    }
-    
-    .card-title{
-      color: #4f7726;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .card-body{
-      display: flex;
-      flex-direction: column;
-    }
-
-    .card-body .btn{
-      margin-top: auto;
-    }
-
-     .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      .card-text{
+        text-align: center;
+      }
       
-     }
+      .card-title{
+        color: #4f7726;
+        font-weight: bold;
+        text-align: center;
+      }
 
-    .card-img-top {
-      height: 220px;
-      padding: 10px;
-      object-fit: contain;
-    }
+      .card-body{
+        display: flex;
+        flex-direction: column;
+      }
 
-    .container{
-      margin-top: 40px;
-    }
+      .card-body .btn{
+        margin-top: auto;
+      }
 
-    .footer{
-      margin-top: 80px;
-    }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        
+      }
+
+      .card-img-top {
+        height: 220px;
+        padding: 10px;
+        object-fit: contain;
+      }
+
+      .container{
+        margin-top: 40px;
+      }
+
+      .footer{
+        margin-top: 80px;
+      }
      </style>
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-custom">
-  <div class="container ">
+  <nav class="navbar navbar-expand-lg navbar-custom">
+   <div class="container ">
     
      <a class="navbar-brand d-flex align-items-center" href="#">
       <a href="index.html">
@@ -90,21 +90,20 @@ $kelas11 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='11'");
     <div class="collapse navbar-collapse ms-4">
       <ul class="navbar-nav">
 
-         <a class="nav-link active" href="index.html">Beranda</a>
+        <a class="nav-link active" href="index.html">Beranda</a>
         <a class="nav-link active" href="kelas10.php">Kelas 10</a>
         <a class="nav-link" href="kelas11.php">Kelas 11</a>
         <a class="nav-link" href="kelas12.php">Kelas 12</a>
         
     </div>
-
 </nav>
+
 <div class="container">
   <div class="row align-items-center">
 
   <div class="col-md-6">
     <h2>Pilih Materi</h2>
     </div>
-
     </div>
 </div>
 

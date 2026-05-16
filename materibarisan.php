@@ -23,72 +23,72 @@ if(!$fungsi){
     background-color: #4f7726;
     color: white;
     border: none;
-}
-.card-bawah,
-.card{
-    width: 600px;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.20);
-}
-.card-bawah {
-    margin-top: -40px;
-    padding: 20px;
+    }
+    .card-bawah,
+    .card{
+        width: 600px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.20);
+    }
+    .card-bawah {
+        margin-top: -40px;
+        padding: 20px;
+        background-color: white;
+
+    }
+
+    .card-header{
+        background-color: white;
+        border: none;
+        padding: 30px;
+    }
+
+    .baris-soal{
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    .text-atas{
+        width: 320px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #4f7726;
+
+    }
+
+    .isi-atas,
+    .isi-bawah{
+        font-size: 22px;
+        color: #4f7726;
+    }
+
+    .isi-bawah{
+        color: #4f7726;
+        font-weight: bold;
+    }
+    .card-body {
+    padding: 10px;
     background-color: white;
+    }
+    .opsi-hover{
+    transition:0.3s;
+    cursor: pointer;
 
-  }
+    }
+    .opsi-hover:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
 
-.card-header{
-    background-color: white;
-    border: none;
-    padding: 30px;
-}
-
-.baris-soal{
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-}
-
-.text-atas{
-    width: 320px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #4f7726;
-
-}
-
-.isi-atas,
-.isi-bawah{
-    font-size: 22px;
-    color: #4f7726;
-}
-
-.isi-bawah{
-    color: #4f7726;
-    font-weight: bold;
-}
-.card-body {
-  padding: 10px;
-  background-color: white;
-}
-.opsi-hover{
-  transition:0.3s;
-  cursor: pointer;
-
-}
-.opsi-hover:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.radio-warna{
-  accent-color: #4f7726;
-}
-.opsi-pilihan:has(input:checked) {
-  border-color: #4f7726;
-  background-color: #edf5e6;
-}
+    .radio-warna{
+    accent-color: #4f7726;
+    }
+    .opsi-pilihan:has(input:checked) {
+    border-color: #4f7726;
+    background-color: #edf5e6;
+    }
   </style>
 
 </head>
@@ -160,7 +160,7 @@ if(!$fungsi){
             $nomor = 1;
             while($data = mysqli_fetch_assoc($fungsi))  {         
             ?>
-            
+
              <h6>Soal Nomor <?=$nomor; ?> / 5</h6>
              <hr>
              <p> 

@@ -19,114 +19,75 @@ if(!$fungsi){
   <link rel="stylesheet" href="style.css">
   
   <style>
-   body{
-   background-color: #f5f5f5;
+    .btn-hijau-custom {
+    background-color: #4f7726;
+    color: white;
+    border: none;
 }
-
-.btn-hijau-custom{
-   background-color: #4f7726;
-   color: white;
-   border: none;
-   border-radius: 10px;
-   padding: 10px 20px;
-   transition: 0.3s;
-}
-
-.btn-hijau-custom:hover{
-   background-color: #3d5f1e;
-   color: white;
-}
-
-.card,
-.card-bawah{
-   width: 100%;
-   max-width: 850px;
-   border: none;
-   border-radius: 20px;
-   box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-   background-color: white;
-}
-
+.card-bawah,
 .card{
-   margin-top: 30px;
+    width: 600px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.20);
 }
+.card-bawah {
+    margin-top: -40px;
+    padding: 20px;
+    background-color: white;
 
-.card-bawah{
-   margin-top: -15px;
-   padding: 30px;
-}
+  }
 
 .card-header{
-   background-color: white;
-   border: none;
-   padding: 30px;
-}
-
-.card-body{
-   padding: 10px;
+    background-color: white;
+    border: none;
+    padding: 30px;
 }
 
 .baris-soal{
-   display: flex;
-   align-items: center;
-   margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
 }
 
 .text-atas{
-   width: 250px;
-   font-size: 20px;
-   font-weight: bold;
-   color: #4f7726;
+    width: 320px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #4f7726;
+
 }
 
 .isi-atas,
 .isi-bawah{
-   font-size: 20px;
-   color: #4f7726;
+    font-size: 22px;
+    color: #4f7726;
 }
 
 .isi-bawah{
-   font-weight: bold;
+    color: #4f7726;
+    font-weight: bold;
 }
-
-.opsi{
-   margin-bottom: 20px;
+.card-body {
+  padding: 10px;
+  background-color: white;
 }
-
 .opsi-hover{
-   transition: 0.3s;
-   cursor: pointer;
-}
+  transition:0.3s;
+  cursor: pointer;
 
+}
 .opsi-hover:hover{
-   border-color: #4f7726;
-   background-color: #f4f8ef;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .radio-warna{
-   accent-color: #4f7726;
+  accent-color: #4f7726;
 }
-
-.opsi-pilihan:has(input:checked){
-   border-color: #4f7726;
-   background-color: #edf5e6;
-}
-
-.form h6{
-   font-size: 20px;
-   font-weight: bold;
-   color: #4f7726;
-   margin-top: 20px;
-}
-
-.form p{
-   font-size: 18px;
-   margin-bottom: 20px;
-   line-height: 1.8;
-}
-
-.footer{
-   margin-top: 80px;
+.opsi-pilihan:has(input:checked) {
+  border-color: #4f7726;
+  background-color: #edf5e6;
 }
   </style>
 
@@ -195,7 +156,6 @@ if(!$fungsi){
           <form class="form" action="proseshasil.php" method="POST">
           <input type="hidden" name="id_users" value="1">
           <input type="hidden" name="id_materi" value="1">
-
             <?php
             $nomor = 1;
             while($data = mysqli_fetch_assoc($fungsi))  {         

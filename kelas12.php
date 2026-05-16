@@ -2,7 +2,9 @@
 include 'koneksi.php';
 
 $kelas12 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='12'");
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,65 +20,64 @@ $kelas12 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='12'");
         font-weight: bold;
         color: #4f7726;
 
-    }
+      }
 
-    .btn-hijau-custom {
-      background-color: #4f7726;
-      color: white;
-      border: none;
-    }
+      .btn-hijau-custom {
+        background-color: #4f7726;
+        color: white;
+        border: none;
+      }
 
 
-    .card{
-      max-width: 300px;
-      margin: auto;
-      height: 100%;
-    }
-    
-     .card-text{
-      text-align: center;
-    }
-
-    .card-title{
-      color: #4f7726;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .card-body{
-      display: flex;
-      flex-direction: column;
-    }
-
-    .card-body .btn{
-      margin-top: auto;
-    }
-
-     .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      .card{
+        max-width: 300px;
+        margin: auto;
+        height: 100%;
+      }
       
-     }
+      .card-text{
+        text-align: center;
+      }
 
-    .card-img-top {
-      height: 220px;
-      padding: 10px;
-      object-fit: contain;
-    }
+      .card-title{
+        color: #4f7726;
+        font-weight: bold;
+        text-align: center;
+      }
 
-    .container{
-      margin-top: 40px;
-    }
+      .card-body{
+        display: flex;
+        flex-direction: column;
+      }
 
-    .footer{
-      margin-top: 80px;
-    }
+      .card-body .btn{
+        margin-top: auto;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        
+      }
+
+      .card-img-top {
+        height: 220px;
+        padding: 10px;
+        object-fit: contain;
+      }
+
+      .container{
+        margin-top: 40px;
+      }
+
+      .footer{
+        margin-top: 80px;
+      }
      </style>
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-custom">
-  <div class="container ">
+    <div class="container ">
     
      <a class="navbar-brand d-flex align-items-center" href="#">
       <a href="index.html">
@@ -156,7 +157,6 @@ $kelas12 = mysqli_query($koneksi, "SELECT * FROM materi WHERE kelas='12'");
                         <ul class="list">
                         <li class="text-tabel">Email: mathpartner@gmail.com</li>
                         <li class="text-tabel">Telepon: 081234567890</li>
-
                         </ul>
                 </div>
                 <div class="col-md-3">
