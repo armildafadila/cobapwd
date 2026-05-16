@@ -32,35 +32,6 @@ session_start();
       <span class="text-judul">MathPartner</span>
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse ms-4">
-      <ul class="navbar-nav">
-
-        <a style="color: #4f7726;" class="nav-link active" href="tentang.html">Tentang</a>
-        <a style="color: #4f7726;" class="nav-link" href="#">Keunggulan</a>
-        <a style="color: #4f7726;" class="nav-link" href="#">Testimoni</a>
-        <li class="nav-item dropdown list-unstyled">
-          <a style="color: #4f7726;" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            Kelas
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="">Kelas 10</a></li>
-            <li><a class="dropdown-item" href="#">Kelas 11</a></li>
-            <li><a class="dropdown-item" href="#">Kelas 12</a></li>
-          </ul>
-        </li>
-
-        </ul>
-
-        <div class="d-flex ms-auto gap-3">
-        <a href="daftar.php" class="btn btn-outline-success">Daftar</a>        
-        <button class="btn btn-outline-success"> Masuk </button>
-    </div>
-    </div>
-
 </nav>
 <div class="d-flex justify-content-center">
   <div class="card p-3">
