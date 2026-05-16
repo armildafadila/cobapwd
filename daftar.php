@@ -18,7 +18,7 @@ session_start();
 <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container">
     
-     <a class="navbar-brand d-flex align-items-center" href="#">
+     <a class="navbar-brand d-flex align-items-center" href="index.html">
       <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="d-inline-block align-text-top">
       <span class="text-judul">MathPartner</span>
     </a>
