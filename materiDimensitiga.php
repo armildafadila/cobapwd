@@ -8,6 +8,7 @@ if(!$fungsi){
     die(mysqli_error($koneksi));
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,11 +91,9 @@ if(!$fungsi){
   background-color: #edf5e6;
 }
   </style>
-
 </head>
 
 <body>
-
 <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container">
     
@@ -159,14 +158,15 @@ if(!$fungsi){
 
             <?php
             $nomor = 1;
-            while($data = mysqli_fetch_assoc($fungsi))  {          ?>
+            while($data = mysqli_fetch_assoc($fungsi))  {         
+             ?>
+
              <h6>Soal Nomor <?=$nomor; ?> / 5</h6>
              <hr>
              <p> 
               <?= $data['pertanyaan']; ?>
              </p>
-             <?php
-              ?>
+             <?php ?>
               <div class="opsi">
                 <label class="border rounded p-4 mb-3 d-block shadow-sm opsi-hover opsi-pilihan">
                 <input type="radio" name="jawaban[<?= $data['id_soal']?>]" value ="A" class="radio-warna">
@@ -221,7 +221,7 @@ if(!$fungsi){
 
             
             ?>
-                <?php } ?>
+            <?php } ?>
 
     <button type="submit" class="btn btn-hijau-custom w-100">Kirim Jawaban</button>
 
@@ -229,31 +229,33 @@ if(!$fungsi){
 </div>
 </div>
 </div>
+<br>
+
 <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 ps-4">
-                    <div class="d-flex align-items-center">
-                     <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
-                <h4 class="fw-bold m-0">MathPartner</h4>
-                </div>
-                <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
-                </div>
-                <div class="col-md-3">
-                <h4 class="fw-bold m-0 mt-3">Kontak Kami</h4>
-                        <ul class="list">
-                        <li class="text-tabel">Email: mathpartner@gmail.com</li>
-                        <li class="text-tabel">Telepon: 081234567890</li>
+  <div class="row justify-content-between">                
+    <div class="col-md-4 ps-4">
+      <div class="d-flex align-items-center">
+        <img src="foto/baru.png" alt="Logo" width="90" height="auto" class="me-2">
+          <h4 class="fw-bold m-0">MathPartner</h4>
+      </div>
+        <p class="m-0" style="font-size: medium;">Website latihan matematika untuk siswa SMA dengan soal terstruktur</p>
+      </div>
+        <div class="col-md-2">
+          <h4 class="fw-bold m-0 mt-3">Kontak Kami</h4>
+            <ul class="list">
+            <li class="text-tabel">Email: mathpartner@gmail.com</li>
+            <li class="text-tabel">Telepon: 081234567890</li>
+            </ul>
 
-                        </ul>
-                </div>
-                <div class="col-md-3">
-                <h4 class="fw-bold m-0 mt-3">Ikuti Sosial Media</h4>
-                        <ul class="list">
-                             <li class="text-tabel">Instagram: @mathpartner</li>
-                             <li class="text-tabel">Youtube: @mathpartner</li>
-                             <li class="text-tabel">Tiktok: @mathpartner</li>
-                        </ul>
+          </div>
+            <div class="col-md-3">
+              <h4 class="fw-bold m-0 mt-3">Ikuti Sosial Media</h4>
+                <ul class="list">
+                  <li class="text-tabel">Instagram: @mathpartner</li>
+                  <li class="text-tabel">Youtube: @mathpartner</li>
+                  <li class="text-tabel">Tiktok: @mathpartner</li>
+                </ul>
                 </div>
                 
                 <hr>
