@@ -1,19 +1,24 @@
 <?php
 include 'koneksi.php';
-
-$id_hasil = $_GET['id_hasil'];
-
-$query = mysqli_query($koneksi, "SELECT * FROM hasil WHERE id_hasil = '$id_hasil'");
-$data = mysqli_fetch_assoc($query);
-
-$nilai = $data['nilai'];
-$jumlah_benar = $data['jumlah_benar'];
-$jumlah_salah = $data['jumlah_salah'];
-
-$id_users = $data['id_users'];
-$id_materi = $data['id_materi'];
+session_start();
 
 
+if(isset($_SESSION['nilai'])) {
+    $nilai = $_SESSION['nilai'];
+    $jumlah_benar = $_SESSION['benar'];
+    $jumlah_salah = $_SESSION['salah'];
+    $id_materi = $_SESSION['id_materi'];
+}
+
+else{
+    header("Location: materifungsi.php");
+    exit;
+}
+
+// ambil nama user klo login
+$nama_user = $_SESSION['nama'] ?? 'peserta';
+
+// pesan dan status
 if($nilai >= 80){
     $status = "HEBAT";
     $pesan = "KEREN";
@@ -26,7 +31,7 @@ elseif($nilai >= 70){
 
 else{
     $status = "beljaar lagi";
-    $pesan = "ggagag";
+    $pesan = "Jangan Pantang Menyerah ya";
 }
 
 ?>
@@ -55,9 +60,11 @@ else{
       border: none;
     }
     .card{
-      max-width: 300px;
-      margin: auto;
-      height: 100%;
+      width: 400px;
+      margin: 50px auto;
+      border: none;
+      border-radius: 20px;
+      margin-top: 3px;
     }
     
     .card-title{
@@ -98,6 +105,14 @@ else{
     .footer{
       margin-top: 80px;
     }
+
+    .card-header{
+        text-align: center;
+        background-color: #4f7726;
+        color: white;
+        
+    }
+    
      </style>
 </head>
 <body>
@@ -133,59 +148,45 @@ else{
  <div class="card shadow" >
 
  <!-- header -->
-
-  <div class="card-header text-center bg-white py-3">
-
-    <h5 class="fw-bold mb-1">Hallo, <?= $id_users ?>!</h5>
+  <div class="card-header">
+    <h5 class="fw-bold mb-1">Hallo, <?= $nama_user ?>!</h5>
     <p>Hasil Pengerjaan soal  <strong><?= $id_materi?></strong></p>
-        </div>
+ </div>
 
-
+ <div class="card-body">
      <p class="pesan text-danger text-center"><?= $pesan ?></p>
-        <div class="text-center">
 
-    <h1 class="fw-bold text-success">
-        <?= $nilai ?>
-    </h1>
 
+<div class="text-center">
+    <h1 class="nilai-besar"><?= $nilai ?></h1>
     <p>Nilai Kamu</p>
-
 </div>
 
 <hr>
 
 <div class="row text-center">
-
     <div class="col-6">
-
-        <h3 class="text-success">
-            <?= $jumlah_benar ?>
+        <h3 class="text-success"><?= $jumlah_benar ?>
         </h3>
-
         <p>Benar</p>
-
     </div>
 
     <div class="col-6">
-
         <h3 class="text-danger">
             <?= $jumlah_salah ?>
         </h3>
-
         <p>Salah</p>
-
     </div>
-
 </div>
 
 <hr>
 
-     <!-- klo mau nambahin ratting tapi nnti aja -->
    
 
 <!-- d-flex justify dll (biar button nya di tengah) -->
- <div class="d-flex justify-content-center">
-    <a href="index.php" class="btn btn-primary w-50">Coba Artis Lainya</a>
+ <div class="d-flex justify-content-center gap-3 mt-3">
+    
+    <a href="pembahasan.php" class="btn btn-hijau-custom">Lihat Pembahasan</a>
  </div>
 </div>
  </div>

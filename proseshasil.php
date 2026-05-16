@@ -3,7 +3,7 @@ include 'koneksi.php';
 session_start();
 
 $jawaban_user = $_POST['jawaban'];
-$id_materi = $_POST['id-materi'];
+$id_materi = $_POST['id_materi'];
 $id_users = $_POST['id_users'];
 
 $query = "SELECT * FROM soal WHERE id_materi = '$id_materi'";
@@ -19,8 +19,8 @@ while($data = mysqli_fetch_assoc($ambil_data)){
     $id_soal = $data['id_soal'];
     $kunci = $data['jawaban_benar'];
 
-    if(isset($jawaban_user['id_soal'])) {
-        $jawaban_peserta = $jawaban_user['$id_soal'];
+    if(isset($jawaban_user[$id_soal])) {
+        $jawaban_peserta = $jawaban_user[$id_soal];
 
         if($jawaban_peserta == $kunci){
             $benar ++;
@@ -38,6 +38,7 @@ $_SESSION['total'] = $jumlah_soal;
 $_SESSION['benar'] = $benar;
 $_SESSION['salah'] = $salah;
 $_SESSION['nilai'] = $skor_bulat;
+$_SESSION['id_materi'] = $id_materi;
 
 header("Location: hasil.php");
 ?>
